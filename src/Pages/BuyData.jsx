@@ -93,7 +93,7 @@ class BuyData extends Component {
           this.context.currentUser.teamID
       )
       .then((res) => {
-        this.setState({ datalinks: res.data });
+        this.setState({ dataLinks: res.data });
       });
 
     http
@@ -169,6 +169,25 @@ class BuyData extends Component {
 
   onFinishPeriod = (e) => {
     console.log("submit");
+    http
+      .get(
+        config.oceanEndpoint +
+          "sale?p=" +
+          this.context.currentUser.period +
+          "&r=" +
+          this.context.currentUser.round +
+          "&t=" +
+          this.context.currentUser.teamID
+      )
+      .then((res) => {});
+    this.state.team.period_num = this.state.team.period_num + 1;
+    this.state.team.isroundover = true;
+    http.put(
+      config.apiEndpoint + "/team/" + this.context.currentUser.teamID,
+      this.state.team
+    );
+    const { history } = this.props;
+    history.push("/");
   };
 
   render() {
@@ -218,8 +237,7 @@ class BuyData extends Component {
                   isPurchased={this.state.purchasedData.data1}
                   dataLink={
                     "https://sas-buydata-files.s3-us-west-1.amazonaws.com/" +
-                    dataLinks.filename1 +
-                    ".csv"
+                    dataLinks.filename1
                   }
                 ></DataPack>
                 <br />
@@ -238,8 +256,7 @@ class BuyData extends Component {
                   isPurchased={this.state.purchasedData.data2}
                   dataLink={
                     "https://sas-buydata-files.s3-us-west-1.amazonaws.com/" +
-                    dataLinks.filename2 +
-                    ".csv"
+                    dataLinks.filename2
                   }
                 ></DataPack>
                 <br />
@@ -258,8 +275,7 @@ class BuyData extends Component {
                   isPurchased={this.state.purchasedData.data3}
                   dataLink={
                     "https://sas-buydata-files.s3-us-west-1.amazonaws.com/" +
-                    dataLinks.filename3 +
-                    ".csv"
+                    dataLinks.filename3
                   }
                 ></DataPack>
                 <br />
@@ -278,8 +294,7 @@ class BuyData extends Component {
                   isPurchased={this.state.purchasedData.data4}
                   dataLink={
                     "https://sas-buydata-files.s3-us-west-1.amazonaws.com/" +
-                    dataLinks.filename4 +
-                    ".csv"
+                    dataLinks.filename4
                   }
                 ></DataPack>
                 <br />
@@ -298,8 +313,7 @@ class BuyData extends Component {
                   isPurchased={this.state.purchasedData.data5}
                   dataLink={
                     "https://sas-buydata-files.s3-us-west-1.amazonaws.com/" +
-                    dataLinks.filename5 +
-                    ".csv"
+                    dataLinks.filename5
                   }
                 ></DataPack>
                 <br />
@@ -317,8 +331,7 @@ class BuyData extends Component {
                   isPurchased={this.state.purchasedData.data6}
                   dataLink={
                     "https://sas-buydata-files.s3-us-west-1.amazonaws.com/" +
-                    dataLinks.filename6 +
-                    ".csv"
+                    dataLinks.filename6
                   }
                 ></DataPack>
               </Box>

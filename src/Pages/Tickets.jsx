@@ -37,6 +37,7 @@ class Tickets extends Component {
     ticketOptions: [],
     ticketBundles: [],
     ticketDiscounts: [],
+    team: [],
 
     test: false,
   };
@@ -47,6 +48,13 @@ class Tickets extends Component {
     if (this.context.currentUser.email === null) {
       history.push("/");
     }
+
+    http
+      .get(config.apiEndpoint + "/team/" + this.context.currentUser.teamID)
+      .then((res) => {
+        this.setState({ team: res.data });
+      });
+
     http
       .get(config.apiEndpoint + "/team/" + this.context.currentUser.teamID)
       .then((res) => {
@@ -104,8 +112,26 @@ class Tickets extends Component {
 
   onFinishPeriod = (e) => {
     console.log("submit");
+    http
+      .get(
+        config.oceanEndpoint +
+          "sale?p=" +
+          this.context.currentUser.period +
+          "&r=" +
+          this.context.currentUser.round +
+          "&t=" +
+          this.context.currentUser.teamID
+      )
+      .then((res) => {});
+    this.state.team.period_num = this.state.team.period_num + 1;
+    this.state.team.isroundover = true;
+    http.put(
+      config.apiEndpoint + "/team/" + this.context.currentUser.teamID,
+      this.state.team
+    );
+    const { history } = this.props;
+    history.push("/");
   };
-
   render() {
     //let btn_class = (this.state.selected = "selected");
     const { teamTickets } = this.state;

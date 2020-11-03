@@ -12,6 +12,7 @@ class Overview extends Component {
   state = {
     int: 5,
     test: false,
+    team: [],
   };
 
   async componentDidMount() {
@@ -25,9 +26,15 @@ class Overview extends Component {
       .get(config.apiEndpoint + "/team/" + this.context.currentUser.teamID)
       .then((res) => {
         console.log(res);
-        if (res.data.isRoundOver === true) {
+        if (res.data.isroundover === true) {
           history.push("/");
         }
+      });
+
+    http
+      .get(config.apiEndpoint + "/team/" + this.context.currentUser.teamID)
+      .then((res) => {
+        this.setState({ team: res.data });
       });
   }
   /*
@@ -53,8 +60,15 @@ class Overview extends Component {
           this.context.currentUser.teamID
       )
       .then((res) => {});
+    this.state.team.period_num = this.state.team.period_num + 1;
+    this.state.team.isroundover = true;
+    http.put(
+      config.apiEndpoint + "/team/" + this.context.currentUser.teamID,
+      this.state.team
+    );
+    const { history } = this.props;
+    history.push("/");
   };
-
   render() {
     return (
       <React.Fragment>
@@ -63,7 +77,7 @@ class Overview extends Component {
           <Container id="page-content-wrapper">
             <NavBar
               budget={this.context.currentUser.budget}
-              period={this.context.currentUser.round}
+              period={this.context.currentUser.period}
             />
             <Box
               px={5}

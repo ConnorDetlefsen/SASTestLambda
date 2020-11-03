@@ -24,6 +24,7 @@ class BuyRides3 extends Component {
   static contextType = UserContext;
 
   state = {
+    team: [],
     ride17Purchased: false,
     ride18Purchased: false,
     ride19Purchased: false,
@@ -210,8 +211,26 @@ class BuyRides3 extends Component {
 
   onFinishPeriod = (e) => {
     console.log("submit");
+    http
+      .get(
+        config.oceanEndpoint +
+          "sale?p=" +
+          this.context.currentUser.period +
+          "&r=" +
+          this.context.currentUser.round +
+          "&t=" +
+          this.context.currentUser.teamID
+      )
+      .then((res) => {});
+    this.state.team.period_num = this.state.team.period_num + 1;
+    this.state.team.isroundover = true;
+    http.put(
+      config.apiEndpoint + "/team/" + this.context.currentUser.teamID,
+      this.state.team
+    );
+    const { history } = this.props;
+    history.push("/");
   };
-
   render() {
     const {
       ride17,

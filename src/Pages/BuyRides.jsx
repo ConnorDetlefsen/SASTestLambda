@@ -24,6 +24,7 @@ class BuyRides extends Component {
   static contextType = UserContext;
 
   state = {
+    team: [],
     ride1Purchased: false,
     ride2Purchased: false,
     ride3Purchased: false,
@@ -227,8 +228,26 @@ class BuyRides extends Component {
 
   onFinishPeriod = (e) => {
     console.log("submit");
+    http
+      .get(
+        config.oceanEndpoint +
+          "sale?p=" +
+          this.context.currentUser.period +
+          "&r=" +
+          this.context.currentUser.round +
+          "&t=" +
+          this.context.currentUser.teamID
+      )
+      .then((res) => {});
+    this.state.team.period_num = this.state.team.period_num + 1;
+    this.state.team.isroundover = true;
+    http.put(
+      config.apiEndpoint + "/team/" + this.context.currentUser.teamID,
+      this.state.team
+    );
+    const { history } = this.props;
+    history.push("/");
   };
-
   render() {
     const {
       ride1,
@@ -381,7 +400,7 @@ class BuyRides extends Component {
               <button
                 onClick={this.onRideMaintenance}
                 class="btn btn-primary leftButton"
-                //disabled={true} //remove this tm
+                disabled={true} //remove this tm
               >
                 Ride Maintenance
               </button>
