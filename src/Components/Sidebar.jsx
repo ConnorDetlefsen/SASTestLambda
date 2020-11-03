@@ -60,7 +60,7 @@ const sideBar = ({ activePage, onFinishPeriod }) => {
             </Link>
             <Link
               class={`sidebar-item ${activePage === "tickets" ? "active" : ""}`}
-              //to="/tickets"
+              to="/tickets" //here
             >
               <StarRounded fontSize="large" />
               <p>Tickets</p>
@@ -83,7 +83,7 @@ const sideBar = ({ activePage, onFinishPeriod }) => {
             </Link>
             <Link
               class={`sidebar-item ${activePage === "buydata" ? "active" : ""}`}
-              //to="/buydata"
+              to="/buydata" //here
             >
               <CloudDownloadOutlined fontSize="large" />
               <p>Buy Data</p>
@@ -92,7 +92,7 @@ const sideBar = ({ activePage, onFinishPeriod }) => {
               class={`sidebar-item ${
                 activePage === "features" ? "active" : ""
               }`}
-              // to="/features"
+              to="/features" //here
             >
               <AttachMoneyOutlined fontSize="large" />
               <p>Features</p>
@@ -101,7 +101,7 @@ const sideBar = ({ activePage, onFinishPeriod }) => {
               class={`sidebar-item ${
                 activePage === "finances" ? "active" : ""
               }`}
-              //to="/finances"
+              to="/finances" //here
             >
               <Icon className="fa fa-calculator" />
               <p>Finances</p>

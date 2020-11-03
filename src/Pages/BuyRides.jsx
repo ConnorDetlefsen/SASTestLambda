@@ -381,7 +381,7 @@ class BuyRides extends Component {
               <button
                 onClick={this.onRideMaintenance}
                 class="btn btn-primary leftButton"
-                disabled={true} //remove this tm
+                //disabled={true} //remove this tm
               >
                 Ride Maintenance
               </button>
