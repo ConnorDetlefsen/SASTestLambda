@@ -56,7 +56,15 @@ class Tickets extends Component {
         }
       });
     http
-      .get(config.apiEndpoint + "/tickets/" + this.context.currentUser.teamID)
+      .get(
+        config.apiEndpoint +
+          "/tickets/" +
+          this.context.currentUser.round +
+          "/" +
+          this.context.currentUser.period +
+          "/" +
+          this.context.currentUser.teamID
+      )
       .then((res) => {
         this.setState({ teamTickets: res.data });
       });

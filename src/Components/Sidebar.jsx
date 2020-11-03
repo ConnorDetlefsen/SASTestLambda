@@ -106,6 +106,13 @@ const sideBar = ({ activePage, onFinishPeriod }) => {
               <Icon className="fa fa-calculator" />
               <p>Finances</p>
             </Link>
+            <Link
+              class={`sidebar-item ${activePage === "finish" ? "active" : ""}`}
+              onClick={onFinishPeriod}
+            >
+              <CheckBoxOutlined fontSize="large" />
+              <p>Finish Period</p>
+            </Link>
           </div>
         </center>
       </div>
