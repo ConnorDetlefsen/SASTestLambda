@@ -269,7 +269,8 @@ class BuyRides2 extends Component {
                   onClick={this.handleClick}
                   id={ride9.ride_id}
                   disabled={
-                    !this.currentUser.isManager && !this.currentUser.isEngineer
+                    !this.context.currentUser.isManager &&
+                    !this.context.currentUser.isEngineer
                   }
                 ></Ride>
                 <Ride
@@ -281,7 +282,8 @@ class BuyRides2 extends Component {
                   onClick={this.handleClick}
                   id={ride10.ride_id}
                   disabled={
-                    !this.currentUser.isManager && !this.currentUser.isEngineer
+                    !this.context.currentUser.isManager &&
+                    !this.context.currentUser.isEngineer
                   }
                 ></Ride>
                 <Ride
@@ -293,7 +295,8 @@ class BuyRides2 extends Component {
                   onClick={this.handleClick}
                   id={ride11.ride_id}
                   disabled={
-                    !this.currentUser.isManager && !this.currentUser.isEngineer
+                    !this.context.currentUser.isManager &&
+                    !this.context.currentUser.isEngineer
                   }
                 ></Ride>
                 <Ride
@@ -305,7 +308,8 @@ class BuyRides2 extends Component {
                   onClick={this.handleClick}
                   id={ride12.ride_id}
                   disabled={
-                    !this.currentUser.isManager && !this.currentUser.isEngineer
+                    !this.context.currentUser.isManager &&
+                    !this.context.currentUser.isEngineer
                   }
                 ></Ride>
                 <Ride
@@ -317,7 +321,8 @@ class BuyRides2 extends Component {
                   onClick={this.handleClick}
                   id={ride13.ride_id}
                   disabled={
-                    !this.currentUser.isManager && !this.currentUser.isEngineer
+                    !this.context.currentUser.isManager &&
+                    !this.context.currentUser.isEngineer
                   }
                 ></Ride>
                 <Ride
@@ -329,7 +334,8 @@ class BuyRides2 extends Component {
                   onClick={this.handleClick}
                   id={ride14.ride_id}
                   disabled={
-                    !this.currentUser.isManager && !this.currentUser.isEngineer
+                    !this.context.currentUser.isManager &&
+                    !this.context.currentUser.isEngineer
                   }
                 ></Ride>
                 <Ride
@@ -341,7 +347,8 @@ class BuyRides2 extends Component {
                   onClick={this.handleClick}
                   id={ride15.ride_id}
                   disabled={
-                    !this.currentUser.isManager && !this.currentUser.isEngineer
+                    !this.context.currentUser.isManager &&
+                    !this.context.currentUser.isEngineer
                   }
                 ></Ride>
                 <Ride
@@ -353,7 +360,8 @@ class BuyRides2 extends Component {
                   onClick={this.handleClick}
                   id={ride16.ride_id}
                   disabled={
-                    !this.currentUser.isManager && !this.currentUser.isEngineer
+                    !this.context.currentUser.isManager &&
+                    !this.context.currentUser.isEngineer
                   }
                 ></Ride>
               </div>

@@ -451,8 +451,8 @@ class Features extends Component {
                       onClick={this.onClick}
                       purchased="true"
                       disabled={
-                        !this.currentUser.isManager &&
-                        !this.currentUser.isMarketing
+                        !this.context.currentUser.isManager &&
+                        !this.context.currentUser.isMarketing
                       }
                     />
                   </div>
@@ -466,8 +466,8 @@ class Features extends Component {
                       onClick={this.onClick}
                       displayButton="true"
                       disabled={
-                        !this.currentUser.isManager &&
-                        !this.currentUser.isMarketing
+                        !this.context.currentUser.isManager &&
+                        !this.context.currentUser.isMarketing
                       }
                     />
                   </div>
@@ -482,8 +482,8 @@ class Features extends Component {
                       onClick={this.onClick}
                       purchased="true"
                       disabled={
-                        !this.currentUser.isManager &&
-                        !this.currentUser.isMarketing
+                        !this.context.currentUser.isManager &&
+                        !this.context.currentUser.isMarketing
                       }
                     />
                   </div>
@@ -497,8 +497,8 @@ class Features extends Component {
                       onClick={this.onClick}
                       displayButton="true"
                       disabled={
-                        !this.currentUser.isManager &&
-                        !this.currentUser.isMarketing
+                        !this.context.currentUser.isManager &&
+                        !this.context.currentUser.isMarketing
                       }
                     />
                   </div>
@@ -514,8 +514,8 @@ class Features extends Component {
                       onClick={this.onClick}
                       purchased="true"
                       disabled={
-                        !this.currentUser.isManager &&
-                        !this.currentUser.isMarketing
+                        !this.context.currentUser.isManager &&
+                        !this.context.currentUser.isMarketing
                       }
                     />
                   </div>
@@ -529,8 +529,8 @@ class Features extends Component {
                       onClick={this.onClick}
                       displayButton="true"
                       disabled={
-                        !this.currentUser.isManager &&
-                        !this.currentUser.isMarketing
+                        !this.context.currentUser.isManager &&
+                        !this.context.currentUser.isMarketing
                       }
                     />
                   </div>
@@ -545,8 +545,8 @@ class Features extends Component {
                       onClick={this.onClick}
                       purchased="true"
                       disabled={
-                        !this.currentUser.isManager &&
-                        !this.currentUser.isMarketing
+                        !this.context.currentUser.isManager &&
+                        !this.context.currentUser.isMarketing
                       }
                     />
                   </div>
@@ -560,8 +560,8 @@ class Features extends Component {
                       onClick={this.onClick}
                       displayButton="true"
                       disabled={
-                        !this.currentUser.isManager &&
-                        !this.currentUser.isMarketing
+                        !this.context.currentUser.isManager &&
+                        !this.context.currentUser.isMarketing
                       }
                     />
                   </div>
@@ -588,8 +588,8 @@ class Features extends Component {
                       onClick={this.onClick}
                       purchased="true"
                       disabled={
-                        !this.currentUser.isManager &&
-                        !this.currentUser.isMarketing
+                        !this.context.currentUser.isManager &&
+                        !this.context.currentUser.isMarketing
                       }
                     />
                   </div>
@@ -603,8 +603,8 @@ class Features extends Component {
                       onClick={this.onClick}
                       displayButton="true"
                       disabled={
-                        !this.currentUser.isManager &&
-                        !this.currentUser.isMarketing
+                        !this.context.currentUser.isManager &&
+                        !this.context.currentUser.isMarketing
                       }
                     />
                   </div>
@@ -619,8 +619,8 @@ class Features extends Component {
                       onClick={this.onClick}
                       purchased="true"
                       disabled={
-                        !this.currentUser.isManager &&
-                        !this.currentUser.isMarketing
+                        !this.context.currentUser.isManager &&
+                        !this.context.currentUser.isMarketing
                       }
                     />
                   </div>
@@ -634,8 +634,8 @@ class Features extends Component {
                       onClick={this.onClick}
                       displayButton="true"
                       disabled={
-                        !this.currentUser.isManager &&
-                        !this.currentUser.isMarketing
+                        !this.context.currentUser.isManager &&
+                        !this.context.currentUser.isMarketing
                       }
                     />
                   </div>
@@ -651,8 +651,8 @@ class Features extends Component {
                       onClick={this.onClick}
                       purchased="true"
                       disabled={
-                        !this.currentUser.isManager &&
-                        !this.currentUser.isMarketing
+                        !this.context.currentUser.isManager &&
+                        !this.context.currentUser.isMarketing
                       }
                     />
                   </div>
@@ -666,8 +666,8 @@ class Features extends Component {
                       onClick={this.onClick}
                       displayButton="true"
                       disabled={
-                        !this.currentUser.isManager &&
-                        !this.currentUser.isMarketing
+                        !this.context.currentUser.isManager &&
+                        !this.context.currentUser.isMarketing
                       }
                     />
                   </div>
@@ -682,8 +682,8 @@ class Features extends Component {
                       onClick={this.onClick}
                       purchased="true"
                       disabled={
-                        !this.currentUser.isManager &&
-                        !this.currentUser.isMarketing
+                        !this.context.currentUser.isManager &&
+                        !this.context.currentUser.isMarketing
                       }
                     />
                   </div>
@@ -697,8 +697,8 @@ class Features extends Component {
                       onClick={this.onClick}
                       displayButton="true"
                       disabled={
-                        !this.currentUser.isManager &&
-                        !this.currentUser.isMarketing
+                        !this.context.currentUser.isManager &&
+                        !this.context.currentUser.isMarketing
                       }
                     />
                   </div>
@@ -725,8 +725,8 @@ class Features extends Component {
                       onClick={this.onClick}
                       purchased="true"
                       disabled={
-                        !this.currentUser.isManager &&
-                        !this.currentUser.isMarketing
+                        !this.context.currentUser.isManager &&
+                        !this.context.currentUser.isMarketing
                       }
                     />
                   </div>
@@ -740,8 +740,8 @@ class Features extends Component {
                       onClick={this.onClick}
                       displayButton="true"
                       disabled={
-                        !this.currentUser.isManager &&
-                        !this.currentUser.isMarketing
+                        !this.context.currentUser.isManager &&
+                        !this.context.currentUser.isMarketing
                       }
                     />
                   </div>
@@ -756,8 +756,8 @@ class Features extends Component {
                       onClick={this.onClick}
                       purchased="true"
                       disabled={
-                        !this.currentUser.isManager &&
-                        !this.currentUser.isMarketing
+                        !this.context.currentUser.isManager &&
+                        !this.context.currentUser.isMarketing
                       }
                     />
                   </div>
@@ -771,8 +771,8 @@ class Features extends Component {
                       onClick={this.onClick}
                       displayButton="true"
                       disabled={
-                        !this.currentUser.isManager &&
-                        !this.currentUser.isMarketing
+                        !this.context.currentUser.isManager &&
+                        !this.context.currentUser.isMarketing
                       }
                     />
                   </div>
@@ -788,8 +788,8 @@ class Features extends Component {
                       onClick={this.onClick}
                       purchased="true"
                       disabled={
-                        !this.currentUser.isManager &&
-                        !this.currentUser.isMarketing
+                        !this.context.currentUser.isManager &&
+                        !this.context.currentUser.isMarketing
                       }
                     />
                   </div>
@@ -803,8 +803,8 @@ class Features extends Component {
                       onClick={this.onClick}
                       displayButton="true"
                       disabled={
-                        !this.currentUser.isManager &&
-                        !this.currentUser.isMarketing
+                        !this.context.currentUser.isManager &&
+                        !this.context.currentUser.isMarketing
                       }
                     />
                   </div>
@@ -819,8 +819,8 @@ class Features extends Component {
                       onClick={this.onClick}
                       purchased="true"
                       disabled={
-                        !this.currentUser.isManager &&
-                        !this.currentUser.isMarketing
+                        !this.context.currentUser.isManager &&
+                        !this.context.currentUser.isMarketing
                       }
                     />
                   </div>
@@ -834,8 +834,8 @@ class Features extends Component {
                       onClick={this.onClick}
                       displayButton="true"
                       disabled={
-                        !this.currentUser.isManager &&
-                        !this.currentUser.isMarketing
+                        !this.context.currentUser.isManager &&
+                        !this.context.currentUser.isMarketing
                       }
                     />
                   </div>
@@ -862,8 +862,8 @@ class Features extends Component {
                       onClick={this.onClick}
                       purchased="true"
                       disabled={
-                        !this.currentUser.isManager &&
-                        !this.currentUser.isMarketing
+                        !this.context.currentUser.isManager &&
+                        !this.context.currentUser.isMarketing
                       }
                     />
                   </div>
@@ -877,8 +877,8 @@ class Features extends Component {
                       onClick={this.onClick}
                       displayButton="true"
                       disabled={
-                        !this.currentUser.isManager &&
-                        !this.currentUser.isMarketing
+                        !this.context.currentUser.isManager &&
+                        !this.context.currentUser.isMarketing
                       }
                     />
                   </div>
@@ -893,8 +893,8 @@ class Features extends Component {
                       onClick={this.onClick}
                       purchased="true"
                       disabled={
-                        !this.currentUser.isManager &&
-                        !this.currentUser.isMarketing
+                        !this.context.currentUser.isManager &&
+                        !this.context.currentUser.isMarketing
                       }
                     />
                   </div>
@@ -908,8 +908,8 @@ class Features extends Component {
                       onClick={this.onClick}
                       displayButton="true"
                       disabled={
-                        !this.currentUser.isManager &&
-                        !this.currentUser.isMarketing
+                        !this.context.currentUser.isManager &&
+                        !this.context.currentUser.isMarketing
                       }
                     />
                   </div>
@@ -925,8 +925,8 @@ class Features extends Component {
                       onClick={this.onClick}
                       purchased="true"
                       disabled={
-                        !this.currentUser.isManager &&
-                        !this.currentUser.isMarketing
+                        !this.context.currentUser.isManager &&
+                        !this.context.currentUser.isMarketing
                       }
                     />
                   </div>
@@ -940,8 +940,8 @@ class Features extends Component {
                       onClick={this.onClick}
                       displayButton="true"
                       disabled={
-                        !this.currentUser.isManager &&
-                        !this.currentUser.isMarketing
+                        !this.context.currentUser.isManager &&
+                        !this.context.currentUser.isMarketing
                       }
                     />
                   </div>
@@ -956,8 +956,8 @@ class Features extends Component {
                       onClick={this.onClick}
                       purchased="true"
                       disabled={
-                        !this.currentUser.isManager &&
-                        !this.currentUser.isMarketing
+                        !this.context.currentUser.isManager &&
+                        !this.context.currentUser.isMarketing
                       }
                     />
                   </div>
@@ -970,6 +970,10 @@ class Features extends Component {
                       value="4000"
                       onClick={this.onClick}
                       displayButton="true"
+                      disabled={
+                        !this.context.currentUser.isManager &&
+                        !this.context.currentUser.isMarketing
+                      }
                     />
                   </div>
                 )}

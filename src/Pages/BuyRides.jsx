@@ -281,7 +281,8 @@ class BuyRides extends Component {
                   onClick={this.handleClick}
                   id={ride1.ride_id}
                   disabled={
-                    !this.currentUser.isManager && !this.currentUser.isEngineer
+                    !this.context.currentUser.isManager &&
+                    !this.context.currentUser.isEngineer
                   }
                 ></Ride>
                 <Ride
@@ -293,7 +294,8 @@ class BuyRides extends Component {
                   onClick={this.handleClick}
                   id={ride2.ride_id}
                   disabled={
-                    !this.currentUser.isManager && !this.currentUser.isEngineer
+                    !this.context.currentUser.isManager &&
+                    !this.context.currentUser.isEngineer
                   }
                 ></Ride>
                 <Ride
@@ -305,7 +307,8 @@ class BuyRides extends Component {
                   onClick={this.handleClick}
                   id={ride3.ride_id}
                   disabled={
-                    !this.currentUser.isManager && !this.currentUser.isEngineer
+                    !this.context.currentUser.isManager &&
+                    !this.context.currentUser.isEngineer
                   }
                 ></Ride>
                 <Ride
@@ -317,7 +320,8 @@ class BuyRides extends Component {
                   onClick={this.handleClick}
                   id={ride4.ride_id}
                   disabled={
-                    !this.currentUser.isManager && !this.currentUser.isEngineer
+                    !this.context.currentUser.isManager &&
+                    !this.context.currentUser.isEngineer
                   }
                 ></Ride>
                 <Ride
@@ -329,7 +333,8 @@ class BuyRides extends Component {
                   onClick={this.handleClick}
                   id={ride5.ride_id}
                   disabled={
-                    !this.currentUser.isManager && !this.currentUser.isEngineer
+                    !this.context.currentUser.isManager &&
+                    !this.context.currentUser.isEngineer
                   }
                 ></Ride>
                 <Ride
@@ -341,7 +346,8 @@ class BuyRides extends Component {
                   onClick={this.handleClick}
                   id={ride6.ride_id}
                   disabled={
-                    !this.currentUser.isManager && !this.currentUser.isEngineer
+                    !this.context.currentUser.isManager &&
+                    !this.context.currentUser.isEngineer
                   }
                 ></Ride>
                 <Ride
@@ -353,7 +359,8 @@ class BuyRides extends Component {
                   onClick={this.handleClick}
                   id={ride7.ride_id}
                   disabled={
-                    !this.currentUser.isManager && !this.currentUser.isEngineer
+                    !this.context.currentUser.isManager &&
+                    !this.context.currentUser.isEngineer
                   }
                 ></Ride>
                 <Ride
@@ -365,7 +372,8 @@ class BuyRides extends Component {
                   onClick={this.handleClick}
                   id={ride8.ride_id}
                   disabled={
-                    !this.currentUser.isManager && !this.currentUser.isEngineer
+                    !this.context.currentUser.isManager &&
+                    !this.context.currentUser.isEngineer
                   }
                 ></Ride>
               </div>
@@ -373,6 +381,7 @@ class BuyRides extends Component {
               <button
                 onClick={this.onRideMaintenance}
                 class="btn btn-primary leftButton"
+                disabled={true} //remove this tm
               >
                 Ride Maintenance
               </button>

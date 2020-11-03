@@ -86,124 +86,126 @@ class Map extends Component {
               </Grid>
               <div class="map">
                 <img src={MapImage} alt="" />
-                <div id="pin-A" class="mapMarker">
-                  <h3>A</h3>
-                  <div class="pin-text">
-                    <img src={WeatherA} class="weatherImage" />
+                <div>
+                  <div id="pin-A" class="mapMarker">
+                    <h3>A</h3>
+                    <div class="pin-text">
+                      <img src={WeatherA} class="weatherImage" />
+                    </div>
                   </div>
-                </div>
-                <div id="pin-B" class="mapMarker">
-                  <h3>B</h3>
-                  <div class="pin-text">
-                    <img src={WeatherB} class="weatherImage" />
+                  <div id="pin-B" class="mapMarker">
+                    <h3>B</h3>
+                    <div class="pin-text">
+                      <img src={WeatherB} class="weatherImage" />
+                    </div>
                   </div>
-                </div>
-                <div id="pin-C" class="mapMarker">
-                  <h3>C</h3>
-                  <div class="pin-text">
-                    <img src={WeatherC} class="weatherImage" />
+                  <div id="pin-C" class="mapMarker">
+                    <h3>C</h3>
+                    <div class="pin-text">
+                      <img src={WeatherC} class="weatherImage" />
+                    </div>
                   </div>
-                </div>
-                <div id="pin-D" class="mapMarker">
-                  <h3>D</h3>
-                  <div class="pin-text">
-                    <img src={WeatherD} class="weatherImage" />
+                  <div id="pin-D" class="mapMarker">
+                    <h3>D</h3>
+                    <div class="pin-text">
+                      <img src={WeatherD} class="weatherImage" />
+                    </div>
                   </div>
-                </div>
-                <div id="pin-E" class="mapMarker">
-                  <h3>E</h3>
-                  <div class="pin-text">
-                    <img src={WeatherE} class="weatherImage" />
+                  <div id="pin-E" class="mapMarker">
+                    <h3>E</h3>
+                    <div class="pin-text">
+                      <img src={WeatherE} class="weatherImage" />
+                    </div>
                   </div>
-                </div>
-                <div id="pin-F" class="mapMarker">
-                  <h3>F</h3>
-                  <div class="pin-text">
-                    <img src={WeatherF} class="weatherImage" />
+                  <div id="pin-F" class="mapMarker">
+                    <h3>F</h3>
+                    <div class="pin-text">
+                      <img src={WeatherF} class="weatherImage" />
+                    </div>
+                  </div>{" "}
+                  <div id="pin-G" class="mapMarker">
+                    <h3>G</h3>
+                    <div class="pin-text">
+                      <img src={WeatherG} class="weatherImage" />
+                    </div>
                   </div>
-                </div>{" "}
-                <div id="pin-G" class="mapMarker">
-                  <h3>G</h3>
-                  <div class="pin-text">
-                    <img src={WeatherG} class="weatherImage" />
+                  <div id="pin-H" class="mapMarker">
+                    <h3>H</h3>
+                    <div class="pin-text">
+                      <img src={WeatherH} class="weatherImage" />
+                    </div>
                   </div>
-                </div>
-                <div id="pin-H" class="mapMarker">
-                  <h3>H</h3>
-                  <div class="pin-text">
-                    <img src={WeatherH} class="weatherImage" />
+                  <div id="pin-I" class="mapMarker">
+                    <h3>I</h3>
+                    <div class="pin-text">
+                      <img src={WeatherI} class="weatherImage" />
+                    </div>
                   </div>
-                </div>
-                <div id="pin-I" class="mapMarker">
-                  <h3>I</h3>
-                  <div class="pin-text">
-                    <img src={WeatherI} class="weatherImage" />
+                  <div id="pin-J" class="mapMarker">
+                    <h3>J</h3>
+                    <div class="pin-text">
+                      <img src={WeatherJ} class="weatherImage" />
+                    </div>
                   </div>
-                </div>
-                <div id="pin-J" class="mapMarker">
-                  <h3>J</h3>
-                  <div class="pin-text">
-                    <img src={WeatherJ} class="weatherImage" />
+                  <div id="pin-K" class="mapMarker">
+                    <h3>K</h3>
+                    <div class="pin-text">
+                      <img src={WeatherK} class="weatherImage" />
+                    </div>
                   </div>
-                </div>
-                <div id="pin-K" class="mapMarker">
-                  <h3>K</h3>
-                  <div class="pin-text">
-                    <img src={WeatherK} class="weatherImage" />
+                  <div id="pin-L" class="mapMarker">
+                    <h3>L</h3>
+                    <div class="pin-text">
+                      <img src={WeatherL} class="weatherImage" />
+                    </div>
+                  </div>{" "}
+                  <div id="pin-M" class="mapMarker">
+                    <h3>M</h3>
+                    <div class="pin-text">
+                      <img src={WeatherM} class="weatherImage" />
+                    </div>
+                  </div>{" "}
+                  <div id="pin-N" class="mapMarker">
+                    <h3>N</h3>
+                    <div class="pin-text">
+                      <img src={WeatherN} class="weatherImage" />
+                    </div>
+                  </div>{" "}
+                  <div id="pin-O" class="mapMarker">
+                    <h3>O</h3>
+                    <div class="pin-text">
+                      <img src={WeatherO} class="weatherImage" />
+                    </div>
                   </div>
-                </div>
-                <div id="pin-L" class="mapMarker">
-                  <h3>L</h3>
-                  <div class="pin-text">
-                    <img src={WeatherL} class="weatherImage" />
+                  <div id="pin-P" class="mapMarker">
+                    <h3>P</h3>
+                    <div class="pin-text">
+                      <img src={WeatherP} class="weatherImage" />
+                    </div>
                   </div>
-                </div>{" "}
-                <div id="pin-M" class="mapMarker">
-                  <h3>M</h3>
-                  <div class="pin-text">
-                    <img src={WeatherM} class="weatherImage" />
+                  <div id="pin-Q" class="mapMarker">
+                    <h3>Q</h3>
+                    <div class="pin-text">
+                      <img src={WeatherQ} class="weatherImage" />
+                    </div>
                   </div>
-                </div>{" "}
-                <div id="pin-N" class="mapMarker">
-                  <h3>N</h3>
-                  <div class="pin-text">
-                    <img src={WeatherN} class="weatherImage" />
+                  <div id="pin-R" class="mapMarker">
+                    <h3>R</h3>
+                    <div class="pin-text">
+                      <img src={WeatherR} class="weatherImage" />
+                    </div>
                   </div>
-                </div>{" "}
-                <div id="pin-O" class="mapMarker">
-                  <h3>O</h3>
-                  <div class="pin-text">
-                    <img src={WeatherO} class="weatherImage" />
+                  <div id="pin-S" class="mapMarker">
+                    <h3>S</h3>
+                    <div class="pin-text">
+                      <img src={WeatherS} class="weatherImage" />
+                    </div>
                   </div>
-                </div>
-                <div id="pin-P" class="mapMarker">
-                  <h3>P</h3>
-                  <div class="pin-text">
-                    <img src={WeatherP} class="weatherImage" />
-                  </div>
-                </div>
-                <div id="pin-Q" class="mapMarker">
-                  <h3>Q</h3>
-                  <div class="pin-text">
-                    <img src={WeatherQ} class="weatherImage" />
-                  </div>
-                </div>
-                <div id="pin-R" class="mapMarker">
-                  <h3>R</h3>
-                  <div class="pin-text">
-                    <img src={WeatherR} class="weatherImage" />
-                  </div>
-                </div>
-                <div id="pin-S" class="mapMarker">
-                  <h3>S</h3>
-                  <div class="pin-text">
-                    <img src={WeatherS} class="weatherImage" />
-                  </div>
-                </div>
-                <div id="pin-T" class="mapMarker">
-                  <h3>T</h3>
-                  <div class="pin-text">
-                    <img src={WeatherT} class="weatherImage" />
+                  <div id="pin-T" class="mapMarker">
+                    <h3>T</h3>
+                    <div class="pin-text">
+                      <img src={WeatherT} class="weatherImage" />
+                    </div>
                   </div>
                 </div>
               </div>

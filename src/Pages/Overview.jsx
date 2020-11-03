@@ -74,55 +74,24 @@ class Overview extends Component {
                 <Grid item xs={12}>
                   <Box p={2} className="bg-lightblue box-shadow rounded">
                     <p>
-                      Lorem ipsum dolor sit amet, at illud delicata definitionem
-                      nec. Eu vix omnium animal, ius quas fierent ad, vix omnes
-                      theophrastus ea. Nobis corpora cu sea, ne accusam officiis
-                      eum. Ne vel euismod nostrum. Latine tamquam suavitate nec
-                      at.Ea idque apeirian eos, vim dicat moderatius te. Vel
-                      natum solum corpora ea. Viderer tacimates qualisque et
-                      est, no ius percipit splendide mediocritatem, laudem
-                      bonorum accusam ut per. In oportere reformidans quo, et
-                      ius suscipit erroribus, novum tractatos ei vix. Quo wisi
-                      veniam id. Saepe salutandi voluptaria ad cum.{" "}
-                    </p>
-                    <p>
-                      Nostrum quaestio splendide id sit. Ex enim solet vix. Per
-                      ei gloriatur democritum, stet iriure expetendis at vel, in
-                      usu mazim viris libris. Doctus cetero fabellas qui ex, vim
-                      nisl fuisset ne, sea eu laoreet corrumpit necessitatibus.
-                      Sit et falli accusata similique, eu iudico delenit vim.
-                      Laudem volutpat prodesset ei vim, eripuit facilisis
-                      dignissim nam ei, sit ea graece doctus gloriatur. Vis
-                      brute saperet eu, errem recteque suscipiantur vis ea, ei
-                      vix dicit luptatum molestiae.{" "}
-                    </p>
-                    <p>
-                      Et vidit accusamus contentiones pri, his tale facer et.
-                      Hinc facer commodo ex sed. Movet scaevola conceptam id
-                      qui, facer alterum cum id, lucilius eloquentiam ea his.
-                      Sea falli tantas ea, ea pri mentitum sententiae, te mel
-                      congue rationibus. Ea quod regione eum, cum ei eius soluta
-                      oblique, nam no omnis recusabo.
+                      Welcome to the Statistical Analysis Simulation! The video
+                      below gives a brief overview of the game’s learning
+                      objectives and outlines the tasks your team will be
+                      assigned each round. Please watch this video before
+                      beginning, and reference it to help answer questions
+                      throughout the simulation. Good luck!
                     </p>
                   </Box>
                 </Grid>
-                <Grid item xs={4}>
+                <Grid item xs={6}>
                   <Box className="rounded">
                     <iframe
-                      src="https://www.youtube.com/embed/tgbNymZ7vqY"
+                      src="https://www.youtube.com/embed/HSPdlzBB40Q"
                       style={{ width: "100%", minHeight: 300 }}
                     ></iframe>
                   </Box>
                 </Grid>
-                <Grid item xs={4}>
-                  <Box className="rounded">
-                    <iframe
-                      src="https://www.youtube.com/embed/tgbNymZ7vqY"
-                      style={{ width: "100%", minHeight: 300 }}
-                    ></iframe>
-                  </Box>
-                </Grid>
-                <Grid item xs={4}>
+                <Grid item xs={6}>
                   <Box className="rounded">
                     <iframe
                       src="https://www.youtube.com/embed/tgbNymZ7vqY"

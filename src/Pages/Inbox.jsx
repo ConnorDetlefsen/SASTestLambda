@@ -40,7 +40,7 @@ class Inbox extends Component {
         }
       });
 
-    if (this.context.currentUser.isFinance === true) {
+    if (this.context.currentUser.isEngineer === true) {
       http
         .get(
           config.apiEndpoint +
@@ -50,7 +50,7 @@ class Inbox extends Component {
             this.context.currentUser.round +
             "/" +
             this.context.currentUser.period +
-            "/finance"
+            "/engineer"
         )
         .then((res) => {
           this.setState({

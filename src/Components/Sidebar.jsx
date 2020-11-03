@@ -14,6 +14,16 @@ import {
   CheckBoxOutlined,
 } from "@material-ui/icons";
 
+/*
+ <Link
+              class={`sidebar-item ${activePage === "finish" ? "active" : ""}`}
+              onClick={onFinishPeriod}
+            >
+              <CheckBoxOutlined fontSize="large" />
+              <p>Finish Period</p>
+            </Link>
+*/
+
 const sideBar = ({ activePage, onFinishPeriod }) => {
   return (
     <React.Fragment>
@@ -50,7 +60,7 @@ const sideBar = ({ activePage, onFinishPeriod }) => {
             </Link>
             <Link
               class={`sidebar-item ${activePage === "tickets" ? "active" : ""}`}
-              to="/tickets"
+              //to="/tickets"
             >
               <StarRounded fontSize="large" />
               <p>Tickets</p>
@@ -73,7 +83,7 @@ const sideBar = ({ activePage, onFinishPeriod }) => {
             </Link>
             <Link
               class={`sidebar-item ${activePage === "buydata" ? "active" : ""}`}
-              to="/buydata"
+              //to="/buydata"
             >
               <CloudDownloadOutlined fontSize="large" />
               <p>Buy Data</p>
@@ -82,7 +92,7 @@ const sideBar = ({ activePage, onFinishPeriod }) => {
               class={`sidebar-item ${
                 activePage === "features" ? "active" : ""
               }`}
-              to="/features"
+              // to="/features"
             >
               <AttachMoneyOutlined fontSize="large" />
               <p>Features</p>
@@ -91,17 +101,10 @@ const sideBar = ({ activePage, onFinishPeriod }) => {
               class={`sidebar-item ${
                 activePage === "finances" ? "active" : ""
               }`}
-              to="/finances"
+              //to="/finances"
             >
               <Icon className="fa fa-calculator" />
               <p>Finances</p>
-            </Link>
-            <Link
-              class={`sidebar-item ${activePage === "finish" ? "active" : ""}`}
-              onClick={onFinishPeriod}
-            >
-              <CheckBoxOutlined fontSize="large" />
-              <p>Finish Period</p>
             </Link>
           </div>
         </center>
