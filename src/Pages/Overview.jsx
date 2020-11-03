@@ -42,6 +42,17 @@ class Overview extends Component {
 
   onFinishPeriod = (e) => {
     console.log("submit");
+    http
+      .get(
+        config.oceanEndpoint +
+          "sale?p=" +
+          this.context.currentUser.period +
+          "&r=" +
+          this.context.currentUser.round +
+          "&t=" +
+          this.context.currentUser.teamID
+      )
+      .then((res) => {});
   };
 
   render() {

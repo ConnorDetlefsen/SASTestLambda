@@ -213,7 +213,7 @@ class BuyData extends Component {
                   id="1"
                   disabled={
                     this.state.purchasedData.data1 ||
-                    !this.currentUser.isManager
+                    !this.context.currentUser.isManager
                   }
                   isPurchased={this.state.purchasedData.data1}
                   dataLink={
@@ -233,7 +233,7 @@ class BuyData extends Component {
                   id="2"
                   disabled={
                     this.state.purchasedData.data2 ||
-                    !this.currentUser.isManager
+                    !this.context.currentUser.isManager
                   }
                   isPurchased={this.state.purchasedData.data2}
                   dataLink={
@@ -253,7 +253,7 @@ class BuyData extends Component {
                   id="3"
                   disabled={
                     this.state.purchasedData.data3 ||
-                    !this.currentUser.isManager
+                    !this.context.currentUser.isManager
                   }
                   isPurchased={this.state.purchasedData.data3}
                   dataLink={
@@ -273,7 +273,7 @@ class BuyData extends Component {
                   id="4"
                   disabled={
                     this.state.purchasedData.data4 ||
-                    !this.currentUser.isManager
+                    !this.context.currentUser.isManager
                   }
                   isPurchased={this.state.purchasedData.data4}
                   dataLink={
@@ -293,7 +293,7 @@ class BuyData extends Component {
                   id="5"
                   disabled={
                     this.state.purchasedData.data5 ||
-                    !this.currentUser.isManager
+                    !this.context.currentUser.isManager
                   }
                   isPurchased={this.state.purchasedData.data5}
                   dataLink={
@@ -312,7 +312,7 @@ class BuyData extends Component {
                   id="6"
                   disabled={
                     this.state.purchasedData.data6 ||
-                    !this.currentUser.isManager
+                    !this.context.currentUser.isManager
                   }
                   isPurchased={this.state.purchasedData.data6}
                   dataLink={
