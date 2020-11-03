@@ -1,0 +1,617 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Arial, Helvetica, sans-serif;
+  background-color: #e5e5e5;
+}
+
+/* Remove extra left and right margins, due to padding in columns */
+.row {
+  margin: 0 -5px;
+}
+
+/* Clear floats after the columns */
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+/* Style the counter cards */
+.cardMKTG {
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2); /* this adds the "card" effect */
+  padding: 16px;
+  text-align: center;
+  background-color: #f1f1f1;
+  justify-content: space-between;
+  padding: 1rem;
+  display: flex;
+  flex-direction: column;
+}
+.cardData {
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2); /* this adds the "card" effect */
+  padding: 16px;
+  text-align: center;
+  background-color: #f1f1f1;
+  justify-content: space-between;
+  padding: 1rem;
+  display: flex;
+  flex-direction: column;
+  height: 50%;
+}
+.card:hover {
+  box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2);
+}
+
+/* Responsive columns - one column layout (vertical) on small screens */
+@media screen and (max-width: 600px) {
+  .column {
+    width: 100%;
+    display: block;
+    margin-bottom: 20px;
+  }
+}
+
+.loc-main-div {
+  border-color: green;
+}
+.loc-div {
+  border: 1px red;
+  float: left;
+}
+.loc-img-div {
+  border: 1px red;
+  float: left;
+}
+
+.half {
+  width: 50%;
+}
+/*these three are for inventory page */
+.wrapper {
+  display: flex;
+}
+.marginleft {
+  margin-left: 0rem;
+}
+.divider {
+  width: 5px;
+  padding-top: 5px;
+  height: auto;
+}
+
+#wrapper {
+  overflow-x: hidden;
+}
+
+#sidebar-wrapper {
+  min-height: 100vh;
+  margin-left: -15rem;
+  -webkit-transition: margin 0.25s ease-out;
+  -moz-transition: margin 0.25s ease-out;
+  -o-transition: margin 0.25s ease-out;
+  transition: margin 0.25s ease-out;
+  background-color: white;
+  width: 10rem;
+}
+
+.sidebar-heading {
+  padding: 0.875rem 1.25rem;
+  font-size: 1.2rem;
+}
+
+.sidebar-items {
+  display: flex;
+  flex-direction: column;
+}
+
+.sidebar-item {
+  text-align: center;
+  font-family: Arial, Helvetica, sans-serif;
+  text-decoration: none;
+  color: black;
+  margin-bottom: 1.5em;
+}
+
+.sidebar-item p {
+  margin: 0;
+}
+
+.sidebar-item.active {
+  color: red;
+}
+
+#wrapper.toggled #sidebar-wrapper {
+  margin-left: 0;
+}
+
+@media (min-width: 768px) {
+  #sidebar-wrapper {
+    margin-left: 0;
+  }
+
+  #page-content-wrapper {
+    min-width: 0;
+    width: 100%;
+  }
+
+  #wrapper.toggled #sidebar-wrapper {
+    margin-left: -15rem;
+  }
+}
+
+.whiteFont {
+  color: white;
+  text-align: center;
+}
+
+/*login css */
+
+@import url(https://fonts.googleapis.com/css?family=Roboto:300);
+header .header {
+  background-color: #fff;
+  height: 55px;
+}
+.login-page {
+  width: 370px;
+  padding: 5% 0 0;
+  margin: auto;
+}
+.login-page .form .login {
+  margin-top: -41px;
+  margin-bottom: 36px;
+}
+
+.form {
+  position: relative;
+  display: inline-block;
+  background-color: #ffffff;
+  color: #0b506d;
+  max-width: 450px;
+  margin: 0 auto 300px;
+  padding: 50px;
+  text-align: center;
+  font-size: 20px;
+  font-weight: bold;
+  box-shadow: 0 0 20px 0 rgba(0, 0, 0, 0.2), 0 5px 5px 0 rgba(0, 0, 0, 0.24);
+}
+.login-input {
+  font-family: "Roboto", sans-serif;
+  outline: 0;
+  background: #f2f2f2;
+  width: 100%;
+  border: 0;
+  margin: 0 0 30px;
+  padding: 2px;
+  box-sizing: border-box;
+  font-size: 14px;
+}
+.login-button {
+  font-family: "Roboto", sans-serif;
+  text-transform: uppercase;
+  outline: 0;
+  background-color: #328f8a;
+  width: 100%;
+  border: 0;
+  padding: 15px;
+  color: #ffffff;
+  font-size: 14px;
+  -webkit-transition: all 0.3 ease;
+  transition: all 0.3 ease;
+  cursor: pointer;
+}
+.login-message {
+  margin: 15px 0 0;
+  color: #b3b3b3;
+  font-size: 12px;
+}
+.login-message a {
+  color: #4caf50;
+  text-decoration: none;
+}
+
+.login-comp {
+  position: center;
+  z-index: 1;
+  max-width: 150px;
+  margin: 0 auto;
+  background-color: white;
+}
+
+.login-body {
+  background-color: azure;
+  font-family: "Roboto", sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+.back {
+  background-color: azure;
+  color: black;
+  margin-top: 20px;
+  padding-top: 30px;
+  padding-bottom: 30px;
+  padding-left: 30px;
+  padding-right: 30px;
+  margin-bottom: 30px;
+  border-style: ridge;
+  border-radius: 12px;
+}
+
+.table {
+  border-collapse: collapse;
+  width: 100%;
+}
+
+.th .td {
+  text-align: left;
+  padding: 8px;
+}
+
+.blackFont {
+  color: black;
+}
+
+.orangeFont {
+  background-color: orange;
+}
+
+.center {
+  text-align: center;
+  position: center;
+}
+
+.cardData {
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2); /* this adds the "card" effect */
+  padding: 16px;
+  text-align: center;
+  background-color: #f1f1f1;
+  justify-content: space-between;
+  padding: 1rem;
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+}
+
+.navbar {
+  background-color: white;
+  padding: 10px 2em;
+}
+
+.navbar h1 {
+  width: 350px;
+  font-size: 25px;
+  background-color: #f0ffff;
+  padding: 3px 7px;
+  margin: 0;
+}
+
+.box-shadow {
+  box-shadow: 1px 1px 4px #bbb;
+}
+
+.rounded {
+  border-radius: 6px;
+  overflow: hidden;
+}
+
+.bg-white {
+  background-color: white;
+}
+
+.bg-blue {
+  background-color: #2d9cdb;
+}
+
+.bg-lightblue {
+  background-color: #f0ffff;
+}
+
+.heightTest {
+  height: 100%;
+  width: 100%;
+}
+
+.ticket {
+  background: #f0ffff;
+  color: black;
+  outline: white;
+  width: 250px;
+  height: 100px;
+}
+.ticket:hover {
+  background-color: #2d9cdb;
+}
+
+.containerBuyData {
+  columns: 3 auto;
+}
+
+.dataPack {
+  background-color: #2d9cdb;
+  border-radius: 10px;
+  height: 250px;
+  width: 250px;
+
+  justify-content: space-between;
+  padding: 1rem;
+  display: flex;
+  flex-direction: column;
+
+  color: #ffffff;
+  font-family: Poppins;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 22px;
+  line-height: 18px;
+}
+
+.dataPackButton {
+  color: #ffffff;
+  box-shadow: 2px 2px 13px rgba(0, 0, 0, 0.0531873);
+}
+.dataPackButton:hover {
+  color: #ffffff;
+  background-color: #e67300;
+  box-shadow: 2px 2px 13px rgba(0, 0, 0, 0.0531873);
+}
+
+.columns {
+  columns: 3 auto;
+}
+
+.columns2 {
+  columns: 2 auto;
+}
+
+.columns4 {
+  columns: 4 auto;
+}
+
+.buyRideCard {
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2); /* this adds the "card" effect */
+  padding: 16px;
+  text-align: center;
+  background-color: #f1f1f1;
+  justify-content: space-between;
+  padding: 1rem;
+  display: flex;
+  flex-direction: column;
+  height: 30%;
+}
+
+.right {
+  position: right;
+}
+
+.rightButton {
+  float: right;
+}
+
+.leftButton {
+  position: left;
+  float: left;
+}
+
+.test {
+  position: absolute;
+  text-align: center;
+}
+
+.map {
+  margin: 10px;
+  border: 5px solid white;
+  position: relative;
+  display: inline-block;
+}
+
+.map img {
+  max-width: 100%;
+  display: block;
+}
+
+.box {
+  width: 25%;
+  height: 25%;
+}
+
+.mapMarker {
+  width: 8%;
+  height: 8%;
+  background-image: url(http://www.clker.com/cliparts/W/0/g/a/W/E/map-pin-red.svg);
+  background-position: top center;
+  background-repeat: no-repeat;
+  background-size: contain;
+  position: absolute;
+}
+
+#pin-A {
+  top: 72%;
+  left: 12%;
+}
+
+#pin-B {
+  top: 48%;
+  left: 10%;
+}
+#pin-C {
+  top: 75%;
+  left: 23%;
+}
+#pin-D {
+  top: 60%;
+  left: 33%;
+}
+#pin-E {
+  top: 58%;
+  left: 23%;
+}
+#pin-F {
+  top: 33%;
+  left: 24%;
+}
+#pin-G {
+  top: 24%;
+  left: 38%;
+}
+#pin-H {
+  top: 30%;
+  left: 8%;
+}
+#pin-I {
+  top: 55%;
+  left: 42%;
+}
+#pin-J {
+  top: 70%;
+  left: 35%;
+}
+#pin-K {
+  top: 35%;
+  left: 42%;
+}
+#pin-L {
+  top: 20%;
+  left: 45%;
+}
+#pin-M {
+  top: 33%;
+  left: 54%;
+}
+#pin-N {
+  top: 57%;
+  left: 50%;
+}
+#pin-O {
+  top: 23%;
+  left: 60%;
+}
+#pin-P {
+  top: 36%;
+  left: 70%;
+}
+#pin-Q {
+  top: 28%;
+  left: 79%;
+}
+#pin-R {
+  top: 25%;
+  left: 90%;
+}
+#pin-S {
+  top: 50%;
+  left: 70%;
+}
+#pin-T {
+  top: 55%;
+  left: 60%;
+}
+.mapMarker:hover > .pin-text {
+  display: flex;
+}
+
+.box:hover > .pin-text {
+  display: block;
+}
+
+.pin-text {
+  height: 25rem;
+  width: 30rem;
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  left: 75%;
+  white-space: nowrap;
+  display: none;
+}
+
+.pin-text h3 {
+  color: white;
+  text-shadow: 1px 1px 1px #000;
+}
+
+.weatherImage {
+  height: 100%;
+  width: 100%;
+}
+.rideImage {
+  height: 12rem;
+  width: 15rem;
+}
+
+/*login css */
+
+@import url(https://fonts.googleapis.com/css?family=Roboto:300);
+header .header {
+  background-color: #fff;
+  height: 55px;
+}
+header a img {
+  width: 134px;
+  margin-top: 4px;
+}
+.login-page {
+  width: 400px;
+  padding: 5% 0 0;
+  margin: auto;
+  background-color: azure;
+}
+.login-page .form .login {
+  margin-top: -41px;
+  margin-bottom: 16px;
+}
+.form {
+  position: relative;
+  display: inline-block;
+  background: #ffffff;
+  max-width: 400px;
+  margin: 0 auto 400px;
+  padding: 50px;
+  text-align: center;
+  font-size: 20px;
+  font-weight: bold;
+  box-shadow: 0 0 20px 0 rgba(0, 0, 0, 0.2), 0 5px 5px 0 rgba(0, 0, 0, 0.24);
+}
+.form input {
+  font-family: "Roboto", sans-serif;
+  outline: 0;
+  background: #f2f2f2;
+  width: 100%;
+  border: 0;
+  margin: 0 0 30px;
+  padding: 2px;
+  box-sizing: border-box;
+  font-size: 14px;
+}
+.form button {
+  font-family: "Roboto", sans-serif;
+  text-transform: uppercase;
+  outline: 0;
+  background-color: #328f8a;
+  width: 100%;
+  border: 0;
+  padding: 15px;
+  color: #ffffff;
+  font-size: 14px;
+  -webkit-transition: all 0.3 ease;
+  transition: all 0.3 ease;
+  cursor: pointer;
+}
+.form .message {
+  margin: 15px 0 0;
+  color: #b3b3b3;
+  font-size: 12px;
+}
+.form .message a {
+  color: #4caf50;
+  text-decoration: none;
+}
+
+.container {
+  position: center;
+  z-index: 1;
+  max-width: 390px;
+  margin: 0 auto;
+}
