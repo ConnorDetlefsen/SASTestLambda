@@ -150,7 +150,9 @@ class Messages extends Component {
                           <option value="Video to your company">
                             Video to your company
                           </option>
-                          <option value="Daily update">Daily update</option>
+                          <option value="Daily update to the board">
+                            Daily update to the board
+                          </option>
                         </select>
                       </label>
                       <textarea

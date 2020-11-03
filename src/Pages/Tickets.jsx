@@ -132,6 +132,11 @@ class Tickets extends Component {
     const { history } = this.props;
     history.push("/");
   };
+
+  notRoundOne() {
+    toast.error("You can access this next round! ");
+  }
+
   render() {
     //let btn_class = (this.state.selected = "selected");
     const { teamTickets } = this.state;
@@ -141,7 +146,11 @@ class Tickets extends Component {
         <ToastContainer />
 
         <Box display="flex" id="wrapper">
-          <Sidebar activePage="tickets" onFinishPeriod={this.onFinishPeriod} />
+          <Sidebar
+            activePage="tickets"
+            onFinishPeriod={this.onFinishPeriod}
+            onClick={this.notRoundOne}
+          />
           <Container id="page-content-wrapper">
             <NavBar
               budget={this.context.currentUser.budget}

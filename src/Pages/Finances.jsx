@@ -92,12 +92,20 @@ class Finances extends Component {
     history.push("/");
   };
 
+  notRoundOne() {
+    toast.error("You can access this next round! ");
+  }
+
   render() {
     return (
       <React.Fragment>
         <ToastContainer />
         <Box display="flex" id="wrapper">
-          <Sidebar activePage="finances" onFinishPeriod={this.onFinishPeriod} />
+          <Sidebar
+            activePage="finances"
+            onFinishPeriod={this.onFinishPeriod}
+            onClick={this.notRoundOne}
+          />
           <Container id="page-content-wrapper">
             <NavBar
               pagename="Marketing"

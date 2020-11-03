@@ -108,7 +108,7 @@ class Overview extends Component {
                     </p>
                   </Box>
                 </Grid>
-                <Grid item xs={6}>
+                <Grid item xs={4}>
                   <Box className="rounded">
                     <iframe
                       src="https://www.youtube.com/embed/HSPdlzBB40Q"
@@ -116,10 +116,18 @@ class Overview extends Component {
                     ></iframe>
                   </Box>
                 </Grid>
-                <Grid item xs={6}>
+                <Grid item xs={4}>
                   <Box className="rounded">
                     <iframe
                       src="https://www.youtube.com/embed/pWfpxn0xTzo"
+                      style={{ width: "100%", minHeight: 300 }}
+                    ></iframe>
+                  </Box>
+                </Grid>
+                <Grid item xs={4}>
+                  <Box className="rounded">
+                    <iframe
+                      src=""
                       style={{ width: "100%", minHeight: 300 }}
                     ></iframe>
                   </Box>
