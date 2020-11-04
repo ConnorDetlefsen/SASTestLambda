@@ -273,7 +273,7 @@ class BuyData extends Component {
                   }
                   isPurchased={this.state.purchasedData.data1}
                   dataLink={
-                    "https://sas-buydata-files.s3-us-west-1.amazonaws.com/" +
+                    "https://s3.console.aws.amazon.com/s3/buckets/sas-buydata-files/" +
                     dataLinks.filename1
                   }
                 ></DataPack>
@@ -292,7 +292,7 @@ class BuyData extends Component {
                   }
                   isPurchased={this.state.purchasedData.data2}
                   dataLink={
-                    "https://sas-buydata-files.s3-us-west-1.amazonaws.com/" +
+                    "https://s3.console.aws.amazon.com/s3/buckets/sas-buydata-files/" +
                     dataLinks.filename2
                   }
                 ></DataPack>
@@ -311,7 +311,7 @@ class BuyData extends Component {
                   }
                   isPurchased={this.state.purchasedData.data3}
                   dataLink={
-                    "https://sas-buydata-files.s3-us-west-1.amazonaws.com/" +
+                    "https://s3.console.aws.amazon.com/s3/buckets/sas-buydata-files/" +
                     dataLinks.filename3
                   }
                 ></DataPack>
@@ -330,7 +330,7 @@ class BuyData extends Component {
                   }
                   isPurchased={this.state.purchasedData.data4}
                   dataLink={
-                    "https://sas-buydata-files.s3-us-west-1.amazonaws.com/" +
+                    "https://s3.console.aws.amazon.com/s3/buckets/sas-buydata-files/" +
                     dataLinks.filename4
                   }
                 ></DataPack>
@@ -349,7 +349,7 @@ class BuyData extends Component {
                   }
                   isPurchased={this.state.purchasedData.data5}
                   dataLink={
-                    "https://sas-buydata-files.s3-us-west-1.amazonaws.com/" +
+                    "https://s3.console.aws.amazon.com/s3/buckets/sas-buydata-files/" +
                     dataLinks.filename5
                   }
                 ></DataPack>
@@ -367,7 +367,7 @@ class BuyData extends Component {
                   }
                   isPurchased={this.state.purchasedData.data6}
                   dataLink={
-                    "https://sas-buydata-files.s3-us-west-1.amazonaws.com/" +
+                    "https://s3.console.aws.amazon.com/s3/buckets/sas-buydata-files/" +
                     dataLinks.filename6
                   }
                 ></DataPack>
