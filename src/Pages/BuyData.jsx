@@ -280,7 +280,7 @@ class BuyData extends Component {
                 <br />
 
                 <DataPack
-                  value={4000}
+                  value={10000}
                   description="Basic Engineering Report"
                   onClick={(e) => {
                     this.handleClick(e);
@@ -299,7 +299,7 @@ class BuyData extends Component {
                 <br />
 
                 <DataPack
-                  value={7000}
+                  value={20000}
                   description="Advanced Engineering Report"
                   onClick={(e) => {
                     this.handleClick(e);
@@ -318,7 +318,7 @@ class BuyData extends Component {
                 <br />
 
                 <DataPack
-                  value={7000}
+                  value={10000}
                   description="Visitor DataPack"
                   onClick={(e) => {
                     this.handleClick(e);
@@ -337,7 +337,7 @@ class BuyData extends Component {
                 <br />
 
                 <DataPack
-                  value={7000}
+                  value={10000}
                   description="Ticket Sales DataPack"
                   onClick={(e) => {
                     this.handleClick(e);
@@ -355,7 +355,7 @@ class BuyData extends Component {
                 ></DataPack>
                 <br />
                 <DataPack
-                  value={7000}
+                  value={50000}
                   description="Competitor DataPack"
                   onClick={(e) => {
                     this.handleClick(e);

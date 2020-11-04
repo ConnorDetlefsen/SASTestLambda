@@ -516,7 +516,7 @@ class Features extends Component {
                     <MarketingPack
                       image={FacebookImage}
                       name="Facebook"
-                      value="5000"
+                      value="30000"
                       onClick={this.onClick}
                       purchased="true"
                       disabled={
@@ -531,7 +531,7 @@ class Features extends Component {
                     <MarketingPack
                       image={FacebookImage}
                       name="Facebook"
-                      value="5000"
+                      value="30000"
                       onClick={this.onClick}
                       displayButton="true"
                       disabled={
@@ -547,7 +547,7 @@ class Features extends Component {
                     <MarketingPack
                       image={TwitterImage}
                       name="Twitter"
-                      value="5000"
+                      value="30000"
                       onClick={this.onClick}
                       purchased="true"
                       disabled={
@@ -562,7 +562,7 @@ class Features extends Component {
                     <MarketingPack
                       image={TwitterImage}
                       name="Twitter"
-                      value="5000"
+                      value="30000"
                       onClick={this.onClick}
                       displayButton="true"
                       disabled={
@@ -579,7 +579,7 @@ class Features extends Component {
                     <MarketingPack
                       image={InstagramImage}
                       name="Instagram"
-                      value="5000"
+                      value="30000"
                       onClick={this.onClick}
                       purchased="true"
                       disabled={
@@ -594,7 +594,7 @@ class Features extends Component {
                     <MarketingPack
                       image={InstagramImage}
                       name="Instagram"
-                      value="5000"
+                      value="30000"
                       onClick={this.onClick}
                       displayButton="true"
                       disabled={
@@ -610,7 +610,7 @@ class Features extends Component {
                     <MarketingPack
                       image={TVImage}
                       name="Television"
-                      value="5000"
+                      value="30000"
                       onClick={this.onClick}
                       purchased="true"
                       disabled={
@@ -625,7 +625,7 @@ class Features extends Component {
                     <MarketingPack
                       image={TVImage}
                       name="Television"
-                      value="5000"
+                      value="30000"
                       onClick={this.onClick}
                       displayButton="true"
                       disabled={
