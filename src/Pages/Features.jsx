@@ -25,6 +25,7 @@ import HandWarmerImage from "../Images/FeaturesImages/hand_warmer.png";
 import PonchoImage from "../Images/FeaturesImages/poncho.png";
 import PumpkinImage from "../Images/FeaturesImages/pumpkin.png";
 import SantaImage from "../Images/FeaturesImages/santa.png";
+import DeepCleanImage from "../Images/FeaturesImages/deep_cleaning.png";
 import { Twitter } from "@material-ui/icons";
 
 class Features extends Component {
@@ -651,8 +652,8 @@ class Features extends Component {
                   <div>
                     <MarketingPack
                       image={DoggieImage}
-                      name="Entry Doggie Bags"
-                      value="6000"
+                      name="Entry Bags"
+                      value="25000"
                       onClick={this.onClick}
                       purchased="true"
                       disabled={
@@ -666,8 +667,8 @@ class Features extends Component {
                   <div>
                     <MarketingPack
                       image={DoggieImage}
-                      name="Entry Doggie Bags"
-                      value="6000"
+                      name="Entry Bags"
+                      value="25000"
                       onClick={this.onClick}
                       displayButton="true"
                       disabled={
@@ -683,7 +684,7 @@ class Features extends Component {
                     <MarketingPack
                       image={FanImage}
                       name="Park Fans"
-                      value="15000"
+                      value="6000"
                       onClick={this.onClick}
                       purchased="true"
                       disabled={
@@ -698,7 +699,7 @@ class Features extends Component {
                     <MarketingPack
                       image={FanImage}
                       name="Park Fans"
-                      value="15000"
+                      value="6000"
                       onClick={this.onClick}
                       displayButton="true"
                       disabled={
@@ -820,7 +821,7 @@ class Features extends Component {
                     <MarketingPack
                       image={EggImage}
                       name="Easter Bunny Photos"
-                      value="14000"
+                      value="2500"
                       onClick={this.onClick}
                       purchased="true"
                       disabled={
@@ -835,7 +836,7 @@ class Features extends Component {
                     <MarketingPack
                       image={EggImage}
                       name="Easter Bunny Photos"
-                      value="14000"
+                      value="2500"
                       onClick={this.onClick}
                       displayButton="true"
                       disabled={
@@ -883,7 +884,7 @@ class Features extends Component {
                     <MarketingPack
                       image={PumpkinImage}
                       name="Halloween Decor"
-                      value="4000"
+                      value="3000"
                       onClick={this.onClick}
                       purchased="true"
                       disabled={
@@ -898,7 +899,7 @@ class Features extends Component {
                     <MarketingPack
                       image={PumpkinImage}
                       name="Halloween Decor"
-                      value="4000"
+                      value="3000"
                       onClick={this.onClick}
                       displayButton="true"
                       disabled={
@@ -925,8 +926,8 @@ class Features extends Component {
                   <div>
                     <MarketingPack
                       image={BroomGray}
-                      name="Cleaning Once a Week"
-                      value="6000"
+                      name="Cleaning Twice a Month"
+                      value="5000"
                       onClick={this.onClick}
                       purchased="true"
                       disabled={
@@ -940,8 +941,8 @@ class Features extends Component {
                   <div>
                     <MarketingPack
                       image={BroomGray}
-                      name="Cleaning Once a Week"
-                      value="6000"
+                      name="Cleaning Twice a Month"
+                      value="5000"
                       onClick={this.onClick}
                       displayButton="true"
                       disabled={
@@ -956,8 +957,8 @@ class Features extends Component {
                   <div>
                     <MarketingPack
                       image={BroomBlack}
-                      name="Cleaning Once a Month"
-                      value="2000"
+                      name="Cleaning Once a Week"
+                      value="10000"
                       onClick={this.onClick}
                       purchased="true"
                       disabled={
@@ -971,8 +972,8 @@ class Features extends Component {
                   <div>
                     <MarketingPack
                       image={BroomBlack}
-                      name="Cleaning Once a Month"
-                      value="2000"
+                      name="Cleaning Once a Week"
+                      value="10000"
                       onClick={this.onClick}
                       displayButton="true"
                       disabled={
@@ -987,9 +988,9 @@ class Features extends Component {
                 {featureBools.feature11 === true && (
                   <div>
                     <MarketingPack
-                      image={BroomGray2}
+                      image={BroomBlack2}
                       name="Cleaning Twice a Week"
-                      value="12000"
+                      value="20000"
                       onClick={this.onClick}
                       purchased="true"
                       disabled={
@@ -1002,9 +1003,9 @@ class Features extends Component {
                 {featureBools.feature11 === false && (
                   <div>
                     <MarketingPack
-                      image={BroomGray2}
+                      image={BroomBlack2}
                       name="Cleaning Twice a Week"
-                      value="12000"
+                      value="20000"
                       onClick={this.onClick}
                       displayButton="true"
                       disabled={
@@ -1018,9 +1019,9 @@ class Features extends Component {
                 {featureBools.feature12 === true && (
                   <div>
                     <MarketingPack
-                      image={BroomBlack2}
-                      name="Cleaning Twice a Month"
-                      value="4000"
+                      image={DeepCleanImage}
+                      name="Deep Clean"
+                      value="10000"
                       onClick={this.onClick}
                       purchased="true"
                       disabled={
@@ -1033,9 +1034,9 @@ class Features extends Component {
                 {featureBools.feature12 === false && (
                   <div>
                     <MarketingPack
-                      image={BroomBlack2}
-                      name="Cleaning Twice a Month"
-                      value="4000"
+                      image={DeepCleanImage}
+                      name="Deep Clean"
+                      value="10000"
                       onClick={this.onClick}
                       displayButton="true"
                       disabled={
