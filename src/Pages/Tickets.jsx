@@ -104,7 +104,14 @@ class Tickets extends Component {
     this.state.teamTickets[type] = id;
     toast.success(displayName + " Option " + id + " Selected");
     http.put(
-      config.apiEndpoint + "/tickets/" + this.context.currentUser.teamID,
+      config.apiEndpoint +
+        "/tickets/" +
+        "/" +
+        this.context.currentUser.round +
+        "/" +
+        this.context.currentUser.period +
+        "/" +
+        this.context.currentUser.teamID,
       this.state.teamTickets
     );
     this.setState({ test: true });
