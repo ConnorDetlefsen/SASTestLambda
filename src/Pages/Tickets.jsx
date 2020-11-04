@@ -93,7 +93,7 @@ class Tickets extends Component {
   }
 */
   handleClick = (e) => {
-    if (!this.currentUser.isManager) {
+    if (!this.context.currentUser.isManager) {
       toast.error("Only the manager can submit ticket options.");
       return;
     }
