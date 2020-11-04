@@ -143,10 +143,9 @@ class Login extends Component {
         //await this.sleep(200);
 
         history.push("/overview");
-      } else {
-        //toast.error("Email and Password doesn't match");
       }
     }
+    toast.error("Email and Password doesn't match");
   };
 
   render() {
