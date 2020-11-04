@@ -71,25 +71,54 @@ class Finances extends Component {
 
   onFinishPeriod = (e) => {
     console.log("submit");
-    http
-      .get(
-        config.oceanEndpoint +
-          "sale?p=" +
-          this.context.currentUser.period +
-          "&r=" +
-          this.context.currentUser.round +
-          "&t=" +
-          this.context.currentUser.teamID
-      )
-      .then((res) => {});
-    this.state.team.period_num = this.state.team.period_num + 1;
-    this.state.team.isroundover = true;
-    http.put(
-      config.apiEndpoint + "/team/" + this.context.currentUser.teamID,
-      this.state.team
-    );
-    const { history } = this.props;
-    history.push("/");
+    if (this.state.team.period_num === 4) {
+      this.state.team.period_num = this.state.team.period_num + 1;
+      this.state.team.isroundover = true;
+      this.state.team.round_num = this.state.team.round_num + 1;
+      http.put(
+        config.apiEndpoint + "/team/" + this.context.currentUser.teamID,
+        this.state.team
+      );
+      http
+        .get(
+          config.oceanEndpoint +
+            "sale?p=" +
+            this.context.currentUser.period +
+            "&r=" +
+            this.context.currentUser.round +
+            "&t=" +
+            this.context.currentUser.teamID
+        )
+        .then((res) => {});
+      toast.success("Round Finished, Come back tomorrow for the next!");
+
+      const { history } = this.props;
+      history.push("/");
+    } else {
+      http
+        .get(
+          config.oceanEndpoint +
+            "sale?p=" +
+            this.context.currentUser.period +
+            "&r=" +
+            this.context.currentUser.round +
+            "&t=" +
+            this.context.currentUser.teamID
+        )
+        .then((res) => {});
+
+      this.state.team.period_num = this.state.team.period_num + 1;
+      this.state.team.isroundover = true;
+      http.put(
+        config.apiEndpoint + "/team/" + this.context.currentUser.teamID,
+        this.state.team
+      );
+      toast.success(
+        "Period Finished, Come back in 5 minutes for the next Period."
+      );
+      const { history } = this.props;
+      history.push("/");
+    }
   };
 
   notRoundOne() {

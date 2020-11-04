@@ -13,18 +13,18 @@ import FacebookImage from "../Images/Facebook.png";
 import InstagramImage from "../Images/instagram.png";
 import TVImage from "../Images/TV.png";
 import TwitterImage from "../Images/Twitter.png";
-import BroomBlack from "../Images/FeaturesImages/broom_black.png"
-import BroomGray from "../Images/FeaturesImages/broom_grey.png"
-import BroomBlack2 from "../Images/FeaturesImages/cleaning_2brooms.png"
-import BroomGray2 from "../Images/FeaturesImages/cleaning_2brooms_grey.png"
-import DoggieImage from "../Images/FeaturesImages/doggie_bag.png"
-import EggImage from "../Images/FeaturesImages/egg.png"
-import FanImage from "../Images/FeaturesImages/fan.png"
-import GiftCardImage from "../Images/FeaturesImages/gift_card.png"
-import HandWarmerImage from "../Images/FeaturesImages/hand_warmer.png"
-import PonchoImage from "../Images/FeaturesImages/poncho.png"
-import PumpkinImage from "../Images/FeaturesImages/pumpkin.png"
-import SantaImage from "../Images/FeaturesImages/santa.png"
+import BroomBlack from "../Images/FeaturesImages/broom_black.png";
+import BroomGray from "../Images/FeaturesImages/broom_grey.png";
+import BroomBlack2 from "../Images/FeaturesImages/cleaning_2brooms.png";
+import BroomGray2 from "../Images/FeaturesImages/cleaning_2brooms_grey.png";
+import DoggieImage from "../Images/FeaturesImages/doggie_bag.png";
+import EggImage from "../Images/FeaturesImages/egg.png";
+import FanImage from "../Images/FeaturesImages/fan.png";
+import GiftCardImage from "../Images/FeaturesImages/gift_card.png";
+import HandWarmerImage from "../Images/FeaturesImages/hand_warmer.png";
+import PonchoImage from "../Images/FeaturesImages/poncho.png";
+import PumpkinImage from "../Images/FeaturesImages/pumpkin.png";
+import SantaImage from "../Images/FeaturesImages/santa.png";
 import { Twitter } from "@material-ui/icons";
 
 class Features extends Component {
@@ -411,25 +411,54 @@ class Features extends Component {
   };
   onFinishPeriod = (e) => {
     console.log("submit");
-    http
-      .get(
-        config.oceanEndpoint +
-          "sale?p=" +
-          this.context.currentUser.period +
-          "&r=" +
-          this.context.currentUser.round +
-          "&t=" +
-          this.context.currentUser.teamID
-      )
-      .then((res) => {});
-    this.state.team.period_num = this.state.team.period_num + 1;
-    this.state.team.isroundover = true;
-    http.put(
-      config.apiEndpoint + "/team/" + this.context.currentUser.teamID,
-      this.state.team
-    );
-    const { history } = this.props;
-    history.push("/");
+    if (this.state.team.period_num === 4) {
+      this.state.team.period_num = this.state.team.period_num + 1;
+      this.state.team.isroundover = true;
+      this.state.team.round_num = this.state.team.round_num + 1;
+      http.put(
+        config.apiEndpoint + "/team/" + this.context.currentUser.teamID,
+        this.state.team
+      );
+      http
+        .get(
+          config.oceanEndpoint +
+            "sale?p=" +
+            this.context.currentUser.period +
+            "&r=" +
+            this.context.currentUser.round +
+            "&t=" +
+            this.context.currentUser.teamID
+        )
+        .then((res) => {});
+      toast.success("Round Finished, Come back tomorrow for the next!");
+
+      const { history } = this.props;
+      history.push("/");
+    } else {
+      http
+        .get(
+          config.oceanEndpoint +
+            "sale?p=" +
+            this.context.currentUser.period +
+            "&r=" +
+            this.context.currentUser.round +
+            "&t=" +
+            this.context.currentUser.teamID
+        )
+        .then((res) => {});
+
+      this.state.team.period_num = this.state.team.period_num + 1;
+      this.state.team.isroundover = true;
+      http.put(
+        config.apiEndpoint + "/team/" + this.context.currentUser.teamID,
+        this.state.team
+      );
+      toast.success(
+        "Period Finished, Come back in 5 minutes for the next Period."
+      );
+      const { history } = this.props;
+      history.push("/");
+    }
   };
 
   notRoundOne() {
