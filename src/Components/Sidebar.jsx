@@ -53,7 +53,7 @@ const sideBar = ({ activePage, onFinishPeriod, onClick }) => {
             </Link>
             <Link
               class={`sidebar-item ${activePage === "rides" ? "active" : ""}`}
-              to="/buyRide"
+              to="/ridemaintenance"
             >
               <Icon className="fa fa-fort-awesome" />
               <p>Rides</p>

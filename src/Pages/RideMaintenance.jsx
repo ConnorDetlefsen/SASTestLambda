@@ -372,6 +372,11 @@ class RideMaintenance extends Component {
     toast.error("You can access this next round! ");
   }
 
+  onBuyRides = (e) => {
+    const { history } = this.props;
+    history.push("/buyride");
+  };
+
   render() {
     const {} = this.state;
     return (
@@ -471,6 +476,13 @@ class RideMaintenance extends Component {
                   ))}
                 </tbody>
               </table>
+              <br />
+              <button
+                onClick={this.onBuyRides}
+                class="btn btn-primary leftButton"
+              >
+                Buy Rides
+              </button>
             </Box>
           </Container>
         </Box>
