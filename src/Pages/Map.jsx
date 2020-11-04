@@ -81,12 +81,21 @@ class Map extends Component {
         }
       });
   }
+
+  notRoundOne() {
+    toast.error("You can access this next round! ");
+  }
+
   render() {
     return (
       <React.Fragment>
         <ToastContainer />
         <Box display="flex" id="wrapper">
-          <Sidebar activePage="map" onFinishPeriod={this.onFinishPeriod} />
+          <Sidebar
+            activePage="map"
+            onFinishPeriod={this.onFinishPeriod}
+            onClick={this.notRoundOne}
+          />
           <Container id="page-content-wrapper">
             <NavBar
               pagename="map"

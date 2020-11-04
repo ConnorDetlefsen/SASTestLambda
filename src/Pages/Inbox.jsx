@@ -5,7 +5,7 @@ import UserContext from "../Context/UserContext";
 
 import http from "../APIServices/httpService";
 import config from "../APIServices/config.json";
-import { ToastContainer } from "react-toastify";
+import { toast, ToastContainer } from "react-toastify";
 import { Box, Container, Grid } from "@material-ui/core";
 
 class Inbox extends Component {
@@ -162,6 +162,10 @@ class Inbox extends Component {
     history.push("/");
   };
 
+  notRoundOne() {
+    toast.error("You can access this next round! ");
+  }
+
   render() {
     const { inbox, message1, message2, message3, message4 } = this.state;
 
@@ -170,7 +174,11 @@ class Inbox extends Component {
         <ToastContainer />
 
         <Box display="flex" id="wrapper">
-          <Sidebar activePage="inbox" onFinishPeriod={this.onFinishPeriod} />
+          <Sidebar
+            activePage="inbox"
+            onFinishPeriod={this.onFinishPeriod}
+            onClick={this.notRoundOne}
+          />
           <Container id="page-content-wrapper">
             <NavBar
               pagename="Inbox"

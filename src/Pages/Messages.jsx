@@ -100,12 +100,20 @@ class Messages extends Component {
     this.setState({ selectValue: e.target.value });
   }
 
+  notRoundOne() {
+    toast.error("You can access this next round! ");
+  }
+
   render() {
     return (
       <React.Fragment>
         <ToastContainer />
         <Box display="flex" id="wrapper">
-          <Sidebar activePage="messages" onFinishPeriod={this.onFinishPeriod} />
+          <Sidebar
+            activePage="messages"
+            onFinishPeriod={this.onFinishPeriod}
+            onClick={this.notRoundOne}
+          />
           <Container id="page-content-wrapper">
             <NavBar
               pagename="map"

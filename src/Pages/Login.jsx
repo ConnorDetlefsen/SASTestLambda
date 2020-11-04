@@ -140,12 +140,11 @@ class Login extends Component {
         }
         toast.success(`Logged in successfully!`);
 
-        await this.sleep(2000);
+        //await this.sleep(200);
 
         history.push("/overview");
       } else {
-        toast.error("Email and Password doesn't match");
-        return;
+        //toast.error("Email and Password doesn't match");
       }
     }
   };
@@ -200,7 +199,7 @@ class Login extends Component {
                 <a
                   //class="list-group-item list-group-item-action"
                   //onClick={this.notRoundOne}
-                  href="https://in-quire.com/terms-of-service/"
+                  href="https://in-quire.com/terms-of-service"
                 >
                   {" "}
                   terms of service.
