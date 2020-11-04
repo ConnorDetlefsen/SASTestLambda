@@ -432,6 +432,10 @@ class Features extends Component {
     history.push("/");
   };
 
+  notRoundOne() {
+    toast.error("You can access this next round! ");
+  }
+
   render() {
     const {
       facebook,
@@ -446,7 +450,11 @@ class Features extends Component {
         <ToastContainer />
 
         <Box display="flex" id="wrapper">
-          <Sidebar activePage="features" onFinishPeriod={this.onFinishPeriod} />
+          <Sidebar
+            activePage="features"
+            onFinishPeriod={this.onFinishPeriod}
+            onClick={this.notRoundOne}
+          />
           <Container id="page-content-wrapper">
             <NavBar
               pagename="Marketing"

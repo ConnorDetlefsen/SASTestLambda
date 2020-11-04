@@ -338,13 +338,21 @@ class RideMaintenance extends Component {
     console.log(e.currentTarget.attributes.status.value);
   };
 
+  notRoundOne() {
+    toast.error("You can access this next round! ");
+  }
+
   render() {
     const {} = this.state;
     return (
       <React.Fragment>
         <ToastContainer />
         <Box display="flex" id="wrapper">
-          <Sidebar activePage="rides" onFinishPeriod={this.onFinishPeriod} />
+          <Sidebar
+            activePage="rides"
+            onFinishPeriod={this.onFinishPeriod}
+            onClick={this.notRoundOne}
+          />
           <Container id="page-content-wrapper">
             <NavBar
               pagename="Rides"

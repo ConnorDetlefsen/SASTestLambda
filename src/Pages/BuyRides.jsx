@@ -248,6 +248,11 @@ class BuyRides extends Component {
     const { history } = this.props;
     history.push("/");
   };
+
+  notRoundOne() {
+    toast.error("You can access this next round! ");
+  }
+
   render() {
     const {
       ride1,
@@ -263,7 +268,11 @@ class BuyRides extends Component {
       <React.Fragment>
         <ToastContainer />
         <Box display="flex" id="wrapper">
-          <Sidebar activePage="rides" onFinishPeriod={this.onFinishPeriod} />
+          <Sidebar
+            activePage="rides"
+            onFinishPeriod={this.onFinishPeriod}
+            onClick={this.notRoundOne}
+          />
           <Container id="page-content-wrapper">
             <NavBar
               pagename="map"

@@ -3,6 +3,7 @@ import Sidebar from "../Components/Sidebar";
 import NavBar from "../Components/NavBar";
 import UserContext from "../Context/UserContext";
 import { Box, Container, Grid } from "@material-ui/core";
+import { toast, ToastContainer } from "react-toastify";
 
 import http from "../APIServices/httpService";
 import config from "../APIServices/config.json";
@@ -69,11 +70,22 @@ class Overview extends Component {
     const { history } = this.props;
     history.push("/");
   };
+
+  notRoundOne() {
+    toast.error("You can access this next round! ");
+  }
+
   render() {
     return (
       <React.Fragment>
+        <ToastContainer />
+
         <Box display="flex" id="wrapper">
-          <Sidebar activePage="overview" onFinishPeriod={this.onFinishPeriod} />
+          <Sidebar
+            activePage="overview"
+            onFinishPeriod={this.onFinishPeriod}
+            onClick={this.notRoundOne}
+          />
           <Container id="page-content-wrapper">
             <NavBar
               budget={this.context.currentUser.budget}
@@ -108,7 +120,7 @@ class Overview extends Component {
                     </p>
                   </Box>
                 </Grid>
-                <Grid item xs={6}>
+                <Grid item xs={4}>
                   <Box className="rounded">
                     <iframe
                       src="https://www.youtube.com/embed/HSPdlzBB40Q"
@@ -116,10 +128,18 @@ class Overview extends Component {
                     ></iframe>
                   </Box>
                 </Grid>
-                <Grid item xs={6}>
+                <Grid item xs={4}>
                   <Box className="rounded">
                     <iframe
-                      src="https://www.youtube.com/embed/tgbNymZ7vqY"
+                      src="https://www.youtube.com/embed/pWfpxn0xTzo"
+                      style={{ width: "100%", minHeight: 300 }}
+                    ></iframe>
+                  </Box>
+                </Grid>
+                <Grid item xs={4}>
+                  <Box className="rounded">
+                    <iframe
+                      src="https://www.youtube.com/embed/zdh2vl0w47o"
                       style={{ width: "100%", minHeight: 300 }}
                     ></iframe>
                   </Box>

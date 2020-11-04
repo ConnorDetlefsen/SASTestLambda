@@ -190,13 +190,21 @@ class BuyData extends Component {
     history.push("/");
   };
 
+  notRoundOne() {
+    toast.error("You can access this next round! ");
+  }
+
   render() {
     const { data, dataLinks } = this.state;
     return (
       <React.Fragment>
         <ToastContainer />
         <Box display="flex" id="wrapper">
-          <Sidebar activePage="buydata" onFinishPeriod={this.onFinishPeriod} />
+          <Sidebar
+            activePage="buydata"
+            onFinishPeriod={this.onFinishPeriod}
+            onClick={this.notRoundOne}
+          />
           <Container id="page-content-wrapper">
             <NavBar
               pagename="Buy Data"

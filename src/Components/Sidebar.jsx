@@ -24,7 +24,7 @@ import {
             </Link>
 */
 
-const sideBar = ({ activePage, onFinishPeriod }) => {
+const sideBar = ({ activePage, onFinishPeriod, onClick }) => {
   return (
     <React.Fragment>
       <ToastContainer />
@@ -61,6 +61,7 @@ const sideBar = ({ activePage, onFinishPeriod }) => {
             <Link
               class={`sidebar-item ${activePage === "tickets" ? "active" : ""}`}
               //to="/tickets" //here
+              onClick={onClick}
             >
               <StarRounded fontSize="large" />
               <p>Tickets</p>
@@ -84,6 +85,7 @@ const sideBar = ({ activePage, onFinishPeriod }) => {
             <Link
               class={`sidebar-item ${activePage === "buydata" ? "active" : ""}`}
               //to="/buydata" //here
+              onClick={onClick}
             >
               <CloudDownloadOutlined fontSize="large" />
               <p>Buy Data</p>
@@ -93,6 +95,7 @@ const sideBar = ({ activePage, onFinishPeriod }) => {
                 activePage === "features" ? "active" : ""
               }`}
               //to="/features" //here
+              onClick={onClick}
             >
               <AttachMoneyOutlined fontSize="large" />
               <p>Features</p>
@@ -102,16 +105,10 @@ const sideBar = ({ activePage, onFinishPeriod }) => {
                 activePage === "finances" ? "active" : ""
               }`}
               //to="/finances" //here
+              onClick={onClick}
             >
               <Icon className="fa fa-calculator" />
               <p>Finances</p>
-            </Link>
-            <Link
-              class={`sidebar-item ${activePage === "finish" ? "active" : ""}`}
-              onClick={onFinishPeriod}
-            >
-              <CheckBoxOutlined fontSize="large" />
-              <p>Finish Period</p>
             </Link>
           </div>
         </center>
