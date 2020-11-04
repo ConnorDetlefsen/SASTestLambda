@@ -13,6 +13,18 @@ import FacebookImage from "../Images/Facebook.png";
 import InstagramImage from "../Images/instagram.png";
 import TVImage from "../Images/TV.png";
 import TwitterImage from "../Images/Twitter.png";
+import BroomBlack from "../Images/FeaturesImages/broom_black.png"
+import BroomGray from "../Images/FeaturesImages/broom_grey.png"
+import BroomBlack2 from "../Images/FeaturesImages/cleaning_2brooms.png"
+import BroomGray2 from "../Images/FeaturesImages/cleaning_2brooms_grey.png"
+import DoggieImage from "../Images/FeaturesImages/doggie_bag.png"
+import EggImage from "../Images/FeaturesImages/egg.png"
+import FanImage from "../Images/FeaturesImages/fan.png"
+import GiftCardImage from "../Images/FeaturesImages/gift_card.png"
+import HandWarmerImage from "../Images/FeaturesImages/hand_warmer.png"
+import PonchoImage from "../Images/FeaturesImages/poncho.png"
+import PumpkinImage from "../Images/FeaturesImages/pumpkin.png"
+import SantaImage from "../Images/FeaturesImages/santa.png"
 import { Twitter } from "@material-ui/icons";
 
 class Features extends Component {
@@ -601,7 +613,7 @@ class Features extends Component {
                 {featureBools.feature1 === true && (
                   <div>
                     <MarketingPack
-                      image={FacebookImage}
+                      image={DoggieImage}
                       name="Entry Doggie Bags"
                       value="6000"
                       onClick={this.onClick}
@@ -616,7 +628,7 @@ class Features extends Component {
                 {featureBools.feature1 === false && (
                   <div>
                     <MarketingPack
-                      image={FacebookImage}
+                      image={DoggieImage}
                       name="Entry Doggie Bags"
                       value="6000"
                       onClick={this.onClick}
@@ -632,7 +644,7 @@ class Features extends Component {
                 {featureBools.feature2 === true && (
                   <div>
                     <MarketingPack
-                      image={FacebookImage}
+                      image={FanImage}
                       name="Park Fans"
                       value="15000"
                       onClick={this.onClick}
@@ -647,7 +659,7 @@ class Features extends Component {
                 {featureBools.feature2 === false && (
                   <div>
                     <MarketingPack
-                      image={FacebookImage}
+                      image={FanImage}
                       name="Park Fans"
                       value="15000"
                       onClick={this.onClick}
@@ -664,7 +676,7 @@ class Features extends Component {
                 {featureBools.feature3 === true && (
                   <div>
                     <MarketingPack
-                      image={FacebookImage}
+                      image={HandWarmerImage}
                       name="Hand Warmers"
                       value="3000"
                       onClick={this.onClick}
@@ -679,7 +691,7 @@ class Features extends Component {
                 {featureBools.feature3 === false && (
                   <div>
                     <MarketingPack
-                      image={FacebookImage}
+                      image={HandWarmerImage}
                       name="Hand Warmers"
                       value="3000"
                       onClick={this.onClick}
@@ -695,7 +707,7 @@ class Features extends Component {
                 {featureBools.feature4 === true && (
                   <div>
                     <MarketingPack
-                      image={FacebookImage}
+                      image={PonchoImage}
                       name="Rain Ponchos"
                       value="4000"
                       onClick={this.onClick}
@@ -710,7 +722,7 @@ class Features extends Component {
                 {featureBools.feature4 === false && (
                   <div>
                     <MarketingPack
-                      image={FacebookImage}
+                      image={PonchoImage}
                       name="Rain Ponchos"
                       value="4000"
                       onClick={this.onClick}
@@ -738,7 +750,7 @@ class Features extends Component {
                 {featureBools.feature5 === true && (
                   <div>
                     <MarketingPack
-                      image={FacebookImage}
+                      image={GiftCardImage}
                       name="Gift Cards"
                       value="10000"
                       onClick={this.onClick}
@@ -753,7 +765,7 @@ class Features extends Component {
                 {featureBools.feature5 === false && (
                   <div>
                     <MarketingPack
-                      image={FacebookImage}
+                      image={GiftCardImage}
                       name="Gift Cards"
                       value="10000"
                       onClick={this.onClick}
@@ -769,7 +781,7 @@ class Features extends Component {
                 {featureBools.feature6 === true && (
                   <div>
                     <MarketingPack
-                      image={FacebookImage}
+                      image={EggImage}
                       name="Easter Bunny Photos"
                       value="14000"
                       onClick={this.onClick}
@@ -784,7 +796,7 @@ class Features extends Component {
                 {featureBools.feature6 === false && (
                   <div>
                     <MarketingPack
-                      image={FacebookImage}
+                      image={EggImage}
                       name="Easter Bunny Photos"
                       value="14000"
                       onClick={this.onClick}
@@ -801,7 +813,7 @@ class Features extends Component {
                 {featureBools.feature7 === true && (
                   <div>
                     <MarketingPack
-                      image={FacebookImage}
+                      image={SantaImage}
                       name="Santa Photos"
                       value="4000"
                       onClick={this.onClick}
@@ -816,7 +828,7 @@ class Features extends Component {
                 {featureBools.feature7 === false && (
                   <div>
                     <MarketingPack
-                      image={FacebookImage}
+                      image={SantaImage}
                       name="Santa Photos"
                       value="4000"
                       onClick={this.onClick}
@@ -832,7 +844,7 @@ class Features extends Component {
                 {featureBools.feature8 === true && (
                   <div>
                     <MarketingPack
-                      image={FacebookImage}
+                      image={PumpkinImage}
                       name="Halloween Decor"
                       value="4000"
                       onClick={this.onClick}
@@ -847,7 +859,7 @@ class Features extends Component {
                 {featureBools.feature8 === false && (
                   <div>
                     <MarketingPack
-                      image={FacebookImage}
+                      image={PumpkinImage}
                       name="Halloween Decor"
                       value="4000"
                       onClick={this.onClick}
@@ -875,7 +887,7 @@ class Features extends Component {
                 {featureBools.feature9 === true && (
                   <div>
                     <MarketingPack
-                      image={FacebookImage}
+                      image={BroomGray}
                       name="Cleaning Once a Week"
                       value="6000"
                       onClick={this.onClick}
@@ -890,7 +902,7 @@ class Features extends Component {
                 {featureBools.feature9 === false && (
                   <div>
                     <MarketingPack
-                      image={FacebookImage}
+                      image={BroomGray}
                       name="Cleaning Once a Week"
                       value="6000"
                       onClick={this.onClick}
@@ -906,7 +918,7 @@ class Features extends Component {
                 {featureBools.feature10 === true && (
                   <div>
                     <MarketingPack
-                      image={FacebookImage}
+                      image={BroomBlack}
                       name="Cleaning Once a Month"
                       value="2000"
                       onClick={this.onClick}
@@ -921,7 +933,7 @@ class Features extends Component {
                 {featureBools.feature10 === false && (
                   <div>
                     <MarketingPack
-                      image={FacebookImage}
+                      image={BroomBlack}
                       name="Cleaning Once a Month"
                       value="2000"
                       onClick={this.onClick}
@@ -938,7 +950,7 @@ class Features extends Component {
                 {featureBools.feature11 === true && (
                   <div>
                     <MarketingPack
-                      image={FacebookImage}
+                      image={BroomGray2}
                       name="Cleaning Twice a Week"
                       value="12000"
                       onClick={this.onClick}
@@ -953,7 +965,7 @@ class Features extends Component {
                 {featureBools.feature11 === false && (
                   <div>
                     <MarketingPack
-                      image={FacebookImage}
+                      image={BroomGray2}
                       name="Cleaning Twice a Week"
                       value="12000"
                       onClick={this.onClick}
@@ -969,7 +981,7 @@ class Features extends Component {
                 {featureBools.feature12 === true && (
                   <div>
                     <MarketingPack
-                      image={FacebookImage}
+                      image={BroomBlack2}
                       name="Cleaning Twice a Month"
                       value="4000"
                       onClick={this.onClick}
@@ -984,7 +996,7 @@ class Features extends Component {
                 {featureBools.feature12 === false && (
                   <div>
                     <MarketingPack
-                      image={FacebookImage}
+                      image={BroomBlack2}
                       name="Cleaning Twice a Month"
                       value="4000"
                       onClick={this.onClick}
