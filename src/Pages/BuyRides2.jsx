@@ -172,6 +172,8 @@ class BuyRides2 extends Component {
     //end budget check
 
     let RideLengthTest = parseInt(e.currentTarget.attributes.time.value, 10);
+    let RideCapacity = parseInt(e.currentTarget.attributes.capacity.value, 10);
+
     let rideID = parseInt(e.currentTarget.id, 10);
     let numRides = this.state.team.num_rides + 1;
 
@@ -180,7 +182,7 @@ class BuyRides2 extends Component {
         team_id: this.context.currentUser.teamID,
         ride_id: rideID,
         ride_length: RideLengthTest,
-        seats: 4,
+        seats: RideCapacity,
         description: e.currentTarget.name,
         pricepurchased: amount,
         team_ride_num: numRides,
@@ -319,6 +321,7 @@ class BuyRides2 extends Component {
                 <Ride
                   image={MineTrain}
                   name={ride9.description}
+                  capacity={ride9.seats}
                   value={ride9.price}
                   time={ride9.ride_length}
                   purchased={this.state.ridesPurchased.ride9}
@@ -333,6 +336,7 @@ class BuyRides2 extends Component {
                   image={Flyer}
                   name={ride10.description}
                   value={ride10.price}
+                  capacity={ride10.seats}
                   time={ride10.ride_length}
                   purchased={this.state.ridesPurchased.ride10}
                   onClick={this.handleClick}
@@ -345,6 +349,7 @@ class BuyRides2 extends Component {
                 <Ride
                   image={Dive}
                   name={ride11.description}
+                  capacity={ride11.seats}
                   value={ride11.price}
                   time={ride11.ride_length}
                   purchased={this.state.ridesPurchased.ride11}
@@ -358,6 +363,7 @@ class BuyRides2 extends Component {
                 <Ride
                   image={Twin}
                   name={ride12.description}
+                  capacity={ride12.seats}
                   value={ride12.price}
                   time={ride12.ride_length}
                   purchased={this.state.ridesPurchased.ride12}
@@ -371,6 +377,7 @@ class BuyRides2 extends Component {
                 <Ride
                   image={Indoor}
                   name={ride13.description}
+                  capacity={ride13.seats}
                   value={ride13.price}
                   time={ride13.ride_length}
                   purchased={this.state.ridesPurchased.ride13}
@@ -384,6 +391,7 @@ class BuyRides2 extends Component {
                 <Ride
                   image={Twister}
                   name={ride14.description}
+                  capacity={ride14.seats}
                   value={ride14.price}
                   time={ride14.ride_length}
                   purchased={this.state.ridesPurchased.ride14}
@@ -398,6 +406,7 @@ class BuyRides2 extends Component {
                   image={Swings}
                   name={ride15.description}
                   value={ride15.price}
+                  capacity={ride15.seats}
                   time={ride15.ride_length}
                   purchased={this.state.ridesPurchased.ride15}
                   onClick={this.handleClick}
@@ -411,6 +420,7 @@ class BuyRides2 extends Component {
                   image={TeaCups}
                   name={ride16.description}
                   value={ride16.price}
+                  capacity={ride16.seats}
                   time={ride16.ride_length}
                   purchased={this.state.ridesPurchased.ride16}
                   onClick={this.handleClick}

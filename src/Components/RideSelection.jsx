@@ -12,6 +12,7 @@ const RideSelection = ({
   displayButton,
   onClick,
   id,
+  capacity,
   disabled,
 }) => {
   return (
@@ -28,6 +29,7 @@ const RideSelection = ({
           {!purchased && (
             <button
               time={time}
+              capacity={capacity}
               type="button"
               onClick={onClick}
               class="btn btn-primary"
