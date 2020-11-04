@@ -925,7 +925,7 @@ class Features extends Component {
                 {featureBools.feature9 === true && (
                   <div>
                     <MarketingPack
-                      image={BroomGray}
+                      image={BroomGray2}
                       name="Cleaning Twice a Month"
                       value="5000"
                       onClick={this.onClick}
@@ -940,7 +940,7 @@ class Features extends Component {
                 {featureBools.feature9 === false && (
                   <div>
                     <MarketingPack
-                      image={BroomGray}
+                      image={BroomGray2}
                       name="Cleaning Twice a Month"
                       value="5000"
                       onClick={this.onClick}
