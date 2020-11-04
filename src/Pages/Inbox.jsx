@@ -212,7 +212,7 @@ class Inbox extends Component {
             <NavBar
               pagename="Inbox"
               budget={this.context.currentUser.budget}
-              period={this.context.currentUser.round}
+              period={this.context.currentUser.period}
             />
             <Box
               px={5}

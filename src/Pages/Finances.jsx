@@ -139,7 +139,7 @@ class Finances extends Component {
             <NavBar
               pagename="Marketing"
               budget={this.context.currentUser.budget}
-              period={this.context.currentUser.round}
+              period={this.context.currentUser.period}
             />
             <Box
               px={5}

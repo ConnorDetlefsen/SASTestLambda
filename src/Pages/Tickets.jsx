@@ -183,7 +183,7 @@ class Tickets extends Component {
           <Container id="page-content-wrapper">
             <NavBar
               budget={this.context.currentUser.budget}
-              period={this.context.currentUser.round}
+              period={this.context.currentUser.period}
             />
             <Box
               px={5}

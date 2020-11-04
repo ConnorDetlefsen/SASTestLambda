@@ -238,7 +238,7 @@ class BuyData extends Component {
             <NavBar
               pagename="Buy Data"
               budget={this.context.currentUser.budget}
-              period={this.context.currentUser.round}
+              period={this.context.currentUser.period}
             />
             <Box
               px={5}
