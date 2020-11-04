@@ -155,6 +155,7 @@ class BuyRides3 extends Component {
     const budget = team.budget; // used to set api team.budget
 
     const isBudgetNotNegative = parseInt(budget, 10) - parseInt(amount, 10);
+
     if (isBudgetNotNegative < 0) {
       toast.error("You don't have enough money!");
       return;
@@ -170,6 +171,8 @@ class BuyRides3 extends Component {
 
     let RideLengthTest = parseInt(e.currentTarget.attributes.time.value, 10);
     let rideID = parseInt(e.currentTarget.id, 10);
+    let RideCapacity = parseInt(e.currentTarget.attributes.capacity.value, 10);
+
     let numRides = this.state.team.num_rides + 1;
 
     http
@@ -177,7 +180,7 @@ class BuyRides3 extends Component {
         team_id: this.context.currentUser.teamID,
         ride_id: rideID,
         ride_length: RideLengthTest,
-        seats: 4,
+        seats: RideCapacity,
         description: e.currentTarget.name,
         pricepurchased: amount,
         team_ride_num: numRides,
@@ -316,6 +319,7 @@ class BuyRides3 extends Component {
                   image={Scrambler}
                   name={ride17.description}
                   value={ride17.price}
+                  capacity={ride17.seats}
                   time={ride17.ride_length}
                   purchased={this.state.ridesPurchased.ride17}
                   onClick={this.handleClick}
@@ -329,6 +333,7 @@ class BuyRides3 extends Component {
                   image={Tilt}
                   name={ride18.description}
                   value={ride18.price}
+                  capacity={ride18.seats}
                   time={ride18.ride_length}
                   purchased={this.state.ridesPurchased.ride18}
                   onClick={this.handleClick}
@@ -342,6 +347,7 @@ class BuyRides3 extends Component {
                   image={Gravitron}
                   name={ride19.description}
                   value={ride19.price}
+                  capacity={ride19.seats}
                   time={ride19.ride_length}
                   purchased={this.state.ridesPurchased.ride19}
                   onClick={this.handleClick}
@@ -354,6 +360,7 @@ class BuyRides3 extends Component {
                 <Ride
                   image={Round}
                   name={ride20.description}
+                  capacity={ride20.seats}
                   value={ride20.price}
                   time={ride20.ride_length}
                   purchased={this.state.ridesPurchased.ride20}
@@ -368,6 +375,7 @@ class BuyRides3 extends Component {
                   image={Zipper}
                   name={ride21.description}
                   value={ride21.price}
+                  capacity={ride21.seats}
                   time={ride21.ride_length}
                   purchased={this.state.ridesPurchased.ride21}
                   onClick={this.handleClick}
@@ -381,6 +389,7 @@ class BuyRides3 extends Component {
                   image={Ferris}
                   name={ride22.description}
                   value={ride22.price}
+                  capacity={ride22.seats}
                   time={ride22.ride_length}
                   purchased={this.state.ridesPurchased.ride22}
                   onClick={this.handleClick}
@@ -393,6 +402,7 @@ class BuyRides3 extends Component {
                 <Ride
                   image={Bumper}
                   name={ride23.description}
+                  capacity={ride23.seats}
                   value={ride23.price}
                   time={ride23.ride_length}
                   purchased={this.state.ridesPurchased.ride23}
@@ -407,6 +417,7 @@ class BuyRides3 extends Component {
                   image={Carousel}
                   name={ride24.description}
                   value={ride24.price}
+                  capacity={ride24.seats}
                   time={ride24.ride_length}
                   purchased={this.state.ridesPurchased.ride24}
                   onClick={this.handleClick}
