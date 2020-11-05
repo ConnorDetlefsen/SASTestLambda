@@ -119,7 +119,7 @@ class Tickets extends Component {
   onFinishPeriod = (e) => {
     console.log("submit");
     if (this.state.team.period_num === 5) {
-      //this.state.team.period_num = this.state.team.period_num + 1;
+      this.state.team.period_num = 1;
       this.state.team.isroundover = true;
       this.state.team.round_num = this.state.team.round_num + 1;
       http.put(

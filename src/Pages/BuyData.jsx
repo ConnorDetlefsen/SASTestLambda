@@ -170,7 +170,7 @@ class BuyData extends Component {
   onFinishPeriod = (e) => {
     console.log("submit");
     if (this.state.team.period_num === 5) {
-      // this.state.team.period_num = this.state.team.period_num + 1;
+      this.state.team.period_num = 1;
       this.state.team.isroundover = true;
       this.state.team.round_num = this.state.team.round_num + 1;
       http.put(
@@ -319,7 +319,7 @@ class BuyData extends Component {
 
                 <DataPack
                   value={10000}
-                  description="Visitor DataPack"
+                  description="Ticket Sales DataPack"
                   onClick={(e) => {
                     this.handleClick(e);
                   }}
@@ -338,7 +338,7 @@ class BuyData extends Component {
 
                 <DataPack
                   value={10000}
-                  description="Ticket Sales DataPack"
+                  description="Visitor DataPack"
                   onClick={(e) => {
                     this.handleClick(e);
                   }}
