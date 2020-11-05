@@ -106,7 +106,6 @@ class Tickets extends Component {
     http.put(
       config.apiEndpoint +
         "/tickets/" +
-        "/" +
         this.context.currentUser.round +
         "/" +
         this.context.currentUser.period +
