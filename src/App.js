@@ -13,6 +13,7 @@ import Map from "./Pages/Map";
 import BuyRides from "./Pages/BuyRides";
 import BuyRides2 from "./Pages/BuyRides2";
 import BuyRides3 from "./Pages/BuyRides3";
+import ConfirmFinish from "./Pages/confirmFinish";
 
 import { UserContext } from "./Context/UserContext";
 import { ToastContainer } from "react-toastify";
@@ -53,7 +54,7 @@ class App extends Component {
             <Route path="/buyRide" component={BuyRides} />
             <Route path="/buyRide2" component={BuyRides2} />
             <Route path="/buyRide3" component={BuyRides3} />
-
+            <Route path="/confirmFinish" component={ConfirmFinish} />
             <Route path="/tickets" component={Tickets} />
             <Route path="/overview" component={Overview} />
             <Route path="/messages" component={Messages} />

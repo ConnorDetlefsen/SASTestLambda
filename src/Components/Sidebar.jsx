@@ -112,7 +112,7 @@ const sideBar = ({ activePage, onFinishPeriod, onClick }) => {
             </Link>
             <Link
               class={`sidebar-item ${activePage === "finish" ? "active" : ""}`}
-              onClick={onFinishPeriod}
+              to="/confirmfinish"
             >
               <CheckBoxOutlined fontSize="large" />
               <p>Finish Period</p>
